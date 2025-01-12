@@ -1,0 +1,73 @@
+.footnote{
+    border-top: 1px solid hsla(0, 0%, 41%, 0.2);
+    background-color: #F2E0C9;
+
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+    flex-direction: row;
+
+    z-index: 1;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    bottom: 0;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    column-gap: 10px;
+    height: 35px;
+}
+
+.email-container, .linkedin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+
+    padding: 1px;
+
+    transition: 0.5s;
+
+    border-bottom: -1px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.email-icon{
+    height: 25px;
+}
+
+.linkedin-icon{
+    height: 18px;
+}
+
+.email-container:hover, .linkedin-container:hover {
+    background-color: #F2B5A7;
+    border-bottom: -1px;
+    border-style: solid;
+    border-color: #F29E6D;
+    cursor: pointer;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+
+    margin-top: 10px;
+
+    opacity: 0.7;
+}
+.copyright-icon{
+    height: 12px;
+}

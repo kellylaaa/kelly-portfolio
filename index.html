@@ -1,24 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelly La</title>
-</head>
-<body>
-    <!--navigation bar-->
-    <header>
-        <p><a href="index.html">Kelly La</a></p>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li>Works</li>
-                <ul>
-                    <li><a href="cooklaborate.html">Cooklaborate</a></li>
-                    <li><a href="afterglow-apparel.html">Afterglow Apparel</a></li>
-                    <li><a href="wakeup-cafe.html">Wake Up Call Cafe</a></li>
-                </ul>
-        </ul>
-    </header>
-</body>
+<html>
+    <head>
+        <title>Kelly La</title>
+
+        <!-- css links -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <link rel="stylesheet" href="styles/footnote.css">
+
+        <!-- fonts -->
+            <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header id="header" onclick="window.scrollTo(0, 0);">
+            <div class="name-section" id="top">
+                <a class="link" href="kellys-portfolio.html">
+                    Kelly La
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <div class="nav-items">
+                    <a class="link" href="#to-projects">Works</a>
+                </div>
+                <div class="nav-items">
+                    <a class="link" href="../About.html">
+                        About
+                    </a>
+                </div>
+                <div class="nav-items">
+                    <a class="link" href="../Kelly La’s Resume.pdf" target="_blank">
+                        Resume
+                    </a>
+                </div>
+                
+                <div class="nav-contact-icons">
+                    <a class="nav-email-container" href="mailto:kellyla99@gmail.com">
+                        <img class="email-icon" src="icon/email.svg">
+                    </a>
+
+                    <a class="nav-linkedin-container"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="linkedin-icon" src="icon/linkedin.svg">
+                    </a>
+                </div>
+            </nav>
+
+            <script>
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    document.getElementById("header").style.top = "-70px";
+                  } else {
+                    document.getElementById("header").style.top = "0px";
+                  }
+                }
+
+            </script>
+        </header>
+
+        <div class="bg">
+            <video autoplay muted loop id="bg-video">
+                <source src="homepage-imgs/bg-vid.mp4" type="video/mp4">
+            </video>
+            <div class="intro">
+                <div class="intro-name">
+                    Hello, I'm Kelly!
+                </div>
+                <div class="intro-description">
+                    I'm a <div class="emphasize"> UX Designer </div> hoping to provide users with a smooth and enjoyable experience. I am currently studying Cognitive Science at UCSD.
+                </div>
+            </div>
+            <a class= "view-works" href="kellys-portfolio.html#to-projects">
+                View my works
+                <img class= "down-arrow" src="icon/down-arrow.svg">
+            </a>
+        </div>
+
+        <div class="lastest-projects-title" id="to-projects">
+        </div>
+
+        <div class="projects-grid">
+            <div class="project">
+                <div>
+                    <a href="Cooklaborate.html" class="img-container"> 
+                        <img class="image" src="homepage-imgs/cooklaborate.png">
+                    </a>
+                </div>
+
+                <div class="project-overview">
+                    <p class="project-title">
+                        Cooklaborate Meal Swapping
+                    </p>
+                    <p class="project-description">
+                        A platform to organize events for people in their community to exchange meals that they have prepped in advance.
+                    </p>
+                </div>
+                <a class="link" href="Cooklaborate.html">
+                    <div class="read-case-study">
+                        Read Case Study
+                        <img src="icon/chevron_right.svg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <div>
+                    <a href="Afterglow.html" class="img-container"> 
+                        <img class="image" src="homepage-imgs/afterglow.png">
+                    </a>
+                </div>
+                <div class="project-overview">
+                    <p class="project-title">
+                        Afterglow Apparel
+                    </p>
+                    <p class="project-description">
+                        A clothing website to provide people with the ability to shop efficiently and to find what they are looking for.
+                    </p>
+                </div>
+                <a class="link" href="Afterglow.html">
+                    <div class="read-case-study">
+                        Read Case Study
+                        <img src="icon/chevron_right.svg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <div>
+                    <a href="Wakeupcall.html" class="img-container"> 
+                        <img class="image" src="homepage-imgs/wakeupcall.png">
+                    </a>
+                </div>
+                <div class="project-overview">
+                    <p class="project-title">
+                        Wake Up Call Cafe
+                    </p>
+                    <p class="project-description">
+                        An application that allows for people to order coffee ahead of time to avoid lines.
+                    </p>
+                </div>
+                <a class="link" href="Wakeupcall.html">
+                    <div class="read-case-study">
+                        Read Case Study
+                        <img src="icon/chevron_right.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <div class="contact-icons">
+                
+                <a class="email-container" href="mailto:kellyla99@gmail.com">
+                    <img class="email-icon" src="icon/email.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/kellylaa248" class="linkedin-container" target="_blank">
+                    <img class="linkedin-icon" src="icon/linkedin.svg">
+                </a>
+            </div>
+
+            <div class="copyright">
+                <img class="copyright-icon" src="icon/copyright.png">
+                2024 Kelly La
+            </div>
+        </div>
+    </body>
 </html>

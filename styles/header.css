@@ -1,0 +1,65 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    transition: 0.5s;
+    background-color: #F2B5A7;
+    padding: 7px;
+
+    box-shadow: 2px 2px 5px hsla(0, 0%, 41%, 0.2);
+}
+
+.name-section{
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-items{
+    margin-left: 20px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.nav-items:hover, .nav-email-container:hover, .nav-linkedin-container:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.nav-contact-icons{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    column-gap: 10px;
+    height: 35px;
+}
+
+.nav-email-container, .nav-linkedin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+

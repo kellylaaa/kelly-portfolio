@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelly La</title>
+
+        <!-- css links -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <link rel="stylesheet" href="styles/footnote.css">
+        <link rel="stylesheet" href="styles/cooklaborate.css">
+
+        <!-- fonts -->
+            <!-- Poppins -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+            <!-- Playfair Display -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">">
+    </head>
+    <body>
+        <header id="header" onclick="window.scrollTo(0, 0);">
+            <div class="name-section">
+                <a class="link" href="index.html">
+                    Kelly La
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <div class="nav-items">
+                    <a class="link" href="#to-projects">Works</a>
+                </div>
+                <div class="nav-items">
+                    <a class="link" href="../About.html">
+                        About
+                    </a>
+                </div>
+                <div class="nav-items">
+                    <a class="link" href="../Kelly La’s Resume.pdf" target="_blank">
+                        Resume
+                    </a>
+                </div>
+                
+                <div class="nav-contact-icons">
+                    <a class="nav-email-container" href="mailto:kellyla99@gmail.com">
+                        <img class="email-icon" src="icon/email.svg">
+                    </a>
+
+                    <a class="nav-linkedin-container"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="linkedin-icon" src="icon/linkedin.svg">
+                    </a>
+                </div>
+            </nav>
+
+            <script>
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    document.getElementById("header").style.top = "-70px";
+                  } else {
+                    document.getElementById("header").style.top = "0px";
+                  }
+                }
+
+            </script>
+        </header>
+
+        <div class="cover">
+            <div class="bg-img"></div>
+            <div class="cover-layout">
+                <div class="cover-layout-left">
+                    <div class="top">
+                        <div class="logo-container">
+                            <img src="cooklaborate-imgs/cooklaborate-logo.png" class="logo">
+                        </div>
+                        <div class="app-sm-description">
+                            Meal Swapping App
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="app-big-description">
+                            Providing meal variety with meal prepping through meal swapping
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="role-tools-time">
+                            <strong>Role:</strong> UX Designer and Researcher
+                        </div>
+                        <div class="role-tools-time">
+                            <strong>Tools:</strong> Figma and Google Sheets
+                        </div>
+                        <div class="role-tools-time">
+                            <strong>Duration:</strong> January - March 2024
+                        </div>
+                    </div>
+                </div>
+                <div class="cover-layout-right">
+                    <img src="cooklaborate-imgs/phone-cover.png" class="cover-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="overview" id="overview">
+            <div class="h1">
+                Overview
+            </div>
+            <div class="problem-goal">
+                <div class="problem">
+                    <div class="h3">
+                        PROBLEM
+                    </div>
+                    <div class="h2">
+                        People lack variety in their daily meals
+                    </div>
+                    <div class="b1">
+                        People often don't have time to cook for themselves every day or struggle with finding new and easy recipes to make. As a result, they either resort to ordering takeout, meal prepping in bulk, or cooking the same meals everyday. The first option is costly and also tends to be unhealthy. The second and last option, while it is cheaper and more nutritious, eating the same few meals for several days at a time easily can get repetitive and boring. 
+                    </div>
+                </div>
+                <div class="goal">
+                    <div class="h3">
+                        Goal
+                    </div>
+                    <div class="h2">
+                        Provide meal variety without the extra work
+                    </div>
+                    <div class="b1">
+                        CookLaborate is a platform to organize events for people in their community to exchange meals that they have prepped in advance. The planning and cooking will take place asynchronously online. Then people will agree on a meet-up time and location to exchange their prepped meals, try it out, leave any feedback, and even recreate it themselves if they want!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-nav">
+            <a class="arrow-up-container" onclick="window.scrollTo(0, 0);">
+                <img class="icon" src="icon/arrow-up.svg">
+            </a>
+            <script>
+                window.addEventListener('scroll', function() {
+                var hiddenBox = document.querySelector('.arrow-up-container');
+                var scrollPosition = window.scrollY;
+                var triggerHeight = 80;
+    
+                if (scrollPosition > triggerHeight) {
+                    hiddenBox.style.opacity = '1';
+                } else {
+                    hiddenBox.style.opacity = '0';
+                }
+                });
+            </script>
+            <div class="nav">
+                <div class="tabs"> Overview </div>
+                <div class="tabs"> Research </div>
+                <div class="tabs"> Ideation </div>
+                <div class="tabs"> Prototype & testing </div>
+                <div class="tabs"> Takeaways </div>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <div class="contact-icons">
+                
+                <a class="email-container" href="mailto:kellyla99@gmail.com">
+                    <img class="email-icon" src="icon/email.svg">
+                </a>
+                <a href="https://www.linkedin.com/in/kellylaa248" class="linkedin-container" target="_blank">
+                    <img class="linkedin-icon" src="icon/linkedin.svg">
+                </a>
+            </div>
+
+            <div class="copyright">
+                <img class="copyright-icon" src="icon/copyright.png">
+                2024 Kelly La
+            </div>
+        </div>
+    </body>
+</html>
