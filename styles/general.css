@@ -7,14 +7,85 @@ html{
 
 body{
     height: 100%;
-    font-family: Poppins, Arial;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
 }
 
 .link{
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
+
+/*text styles*/
+    h1{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    h1-semi{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    h2{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    h2-semi{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    h3{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+    h3-semi{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0px;
+    }
+
+    p-text{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    
+    .project-title{
+        font-family: "Playfair Display", 'Times New Roman', Times, serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    homepage-kelly-la{
+        font-family: "Playfair Display", 'Times New Roman', Times, serif;
+        font-size: 85px;
+        font-weight: 500;
+        letter-spacing: 30px;
+        align-items: center;
+    }
