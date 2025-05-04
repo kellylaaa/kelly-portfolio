@@ -85,9 +85,9 @@
 .project{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 150px 100px;
+    padding: 180px 200px;
     align-items: center;
-    gap: 40px;
+    gap: 70px;
     background-color: #4b9b5b;
     color: white;
 }
@@ -123,6 +123,11 @@
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+}
+
+.project-extra{
+    opacity: 70%;
+    margin-top: 10px; 
 }
 
 .read-case-study{
