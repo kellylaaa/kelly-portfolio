@@ -11,7 +11,6 @@
     padding-bottom: 40px;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
     
     background: radial-gradient(53.38% 68.33% at 50% 50%, #FFF 0%, #A4B6E9 100%);
 }
@@ -62,33 +61,20 @@
 
 /*all projects*/
 .all-projects{
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     align-self: stretch;
-}
-
-.latest-projects{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    align-self: stretch;
-
-    border-bottom: 1px solid #000;
+    display: flex;
+    gap: 10px;
 }
 
 .project{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 180px 200px;
+    padding: 150px 200px;
     align-items: center;
     gap: 70px;
-    background-color: #4b9b5b;
     color: white;
 }
 
@@ -117,23 +103,50 @@
     align-self: stretch;
 }
 
+.project-name{
+    align-self: stretch;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+    font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    display: flex;
+}
+
 .project-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+    margin-bottom: 20px;
+}
+
+.project-title{
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.feature-text{
+    opacity: 0.7;
 }
 
 .project-extra{
-    opacity: 70%;
     margin-top: 10px; 
+    color:rgba(255, 255, 255, 0.8);
 }
 
 .read-case-study{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 5px;
     align-self: stretch;
+    padding: 5px 20px;
+    background-color:rgba(255, 255, 255, 0.20);
+    background: white;
+    color:#4b9b5b;
+    border-radius: 25px;
 }
