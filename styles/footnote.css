@@ -1,0 +1,14 @@
+.footnote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
+
+    height: 15vh;
+    padding-bottom: 10px;
+    z-index: 100;
+    bottom:0;
+    align-self: stretch;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.50);
+}
