@@ -53,6 +53,14 @@ body{
         display: flex;
     }
 
+    h3-reg{
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0px;
+        display: flex;
+    }
+
     h4{
         font-family: "DM Sans", Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -84,7 +92,7 @@ body{
         font-family: "Playfair Display", 'Times New Roman', Times, serif;
         font-size: 85px;
         font-weight: 500;
-        letter-spacing: 30px;
+        letter-spacing: 10px;
         align-items: center;
         justify-content: center;
         text-align: center;
