@@ -88,12 +88,12 @@ body{
         display: flex;
     }
 
-    homepage-kelly-la{
+    homepage-ux{
         font-family: "Playfair Display", 'Times New Roman', Times, serif;
-        font-size: 85px;
+        font-size: 60px;
         font-weight: 500;
-        letter-spacing: 10px;
+        letter-spacing: 25px;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: left;
     }
