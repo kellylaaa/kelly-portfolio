@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelly La</title>
+
+        <!-- css links -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <link rel="stylesheet" href="styles/footnote.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header id="header" onclick="window.scrollTo(0, 0);">
+            <a class="link" href="index.html">
+                    Kelly La
+            </a>
+            <nav class="nav-items">
+                <div class="nav-pages">
+                    <a class="link" href="index.html#works">Works</a>
+                    <a class="link" href="about.html">
+                        About
+                    </a>
+                    <a class="link" href="Kelly La’s Resume.pdf" target="_blank">
+                        Resume
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="icon/mail.svg">
+                    </a>
+
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="icon/linkedin.svg">
+                    </a>
+                </div>
+
+            </nav>
+
+            <script>
+                let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const header = document.getElementById("header");
+                let lastHidePosition = lastScrollTop;
+                
+                window.addEventListener("scroll", function () {
+                  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                
+                  if (currentScroll < 50) {
+                    // Always show header at the very top
+                    header.style.top = "0px";
+                  } else if (currentScroll > lastScrollTop) {
+                    // Scrolling down
+                    header.style.top = "-132px";
+                    lastHidePosition = currentScroll;
+                  } else if (lastHidePosition - currentScroll > 100) {
+                    // Scrolled up more than 100px
+                    header.style.top = "0px";
+                  }
+                
+                  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                });
+                </script> 
+        </header> 
+
+        <div class="footnote">
+            <p>© 2025 Kelly La</p>
+            <div class="nav-items">
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="icon/mail.svg">
+                    </a>
+    
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="icon/linkedin.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

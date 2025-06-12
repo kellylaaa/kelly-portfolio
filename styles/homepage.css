@@ -91,13 +91,23 @@
     display: flex;
 }
 
+.project-box{
+    padding: 180px 200px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .project{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 180px 200px;
     align-items: center;
     gap: 70px;
     color: black;
+    transition: 0.5s;
+}
+
+.project:hover{
+    transform: scale(1.05);
 }
 
 .wireframe-container{
