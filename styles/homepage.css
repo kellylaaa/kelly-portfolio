@@ -1,17 +1,19 @@
 /*landing page*/
 .landing{
     width: 100vw;
-    height: 100vh;
+    height: calc(100svh - 110px);
     position: relative;
     background: radial-gradient(54.71% 70.03% at 32.97% 50%, #FFF 0%, #A4B6E9 100%);
     display: flex;
     align-items: center;
+    padding-top: 110px;
 }
 
 .landing-content{
-    padding-top: 50px;
     position: relative;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
     padding-left: 200px;
     padding-right: 200px;
 }
@@ -120,17 +122,6 @@
 
     border-radius: 400px;
     background: radial-gradient(50% 50% at 50% 50%, #2f3f7a 0%, rgba(26, 53, 31, 0.00) 100%);
-}
-.wireframe-container-dark{
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-radius: 400px;
-    background: radial-gradient(50% 50% at 50% 50%, #ffffffab 0%, rgba(26, 53, 31, 0.00) 100%);
 }
 
 .wireframe-img{
