@@ -87,7 +87,7 @@
                 <div class="details">
                     <div class="role-tool-time">
                         <small style="font-weight: 600;">Role</small>
-                        <small>UX Design, UX Research, Visual Design</small>
+                        <small>UX Design, UX Research, <br> Visual Design</small>
                     </div>
                     <div class="role-tool-time">
                         <small style="font-weight: 600;">Tool</small>
@@ -126,98 +126,307 @@
                 </div>
             </div>
             <div class="section">
-                <div class="section-title">
-                    <h2>Research</h2>
-                </div>
-                <div class="sub-section">
-                    <h3>Interviewing target audience</h3>
-                    <div class="paragraphs">
+                <h2 class="section-title">Research</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <h3>Interviewing target audience</h3>
                         <p>In this stage, we conducted user interviews with 10 people, 7 of whom were customers at Seven Seas Roasting Co., and 4 who were at other coffee shops. Our goal for the interviews were to get a better sense of the target audience’s needs and expectations.</p>
-                        <div class="chunk">
+                        <div class="paragraphs">
                             <p>From our interviewees, we found that they go to cafes for 1 of these 3 reasons:</p>
-                        <ul>
-                            <li>The coffee quality is better than that of other coffee shops</li>
-                            <li>They need a location where they can study and work</li>
                             <ul>
-                                <li>Often I need to find out what amenities a location has to offer (free wifi, seating, etc.)</li>
+                                <li>The coffee quality is better than that of other coffee shops</li>
+                                <li>They need a location where they can study and work</li>
+                                <ul>
+                                    <li>Often people need to find out what amenities a location has to offer (free wifi, seating, etc.)</li>
+                                </ul>
+                                <li>They are taste-testing coffees from many different locations</li>
+                                <ul>
+                                    <li>Prefer to browse menus online before making a decision on which coffee shop to visit</li>
+                                </ul>
                             </ul>
-                            <li>They are taste-testing coffees from many different locations</li>
-                            <ul>
-                                <li>Prefer to browse menus online before making a decision on which coffee shop to visit</li>
-                            </ul>
-                        </ul>
                         </div>
                         <a class="button">
                             <small style="font-weight: 500;">View interview document</small>
                         </a>
                     </div>
-                </div>
-                <div class="sub-section">
-                    <h3>Personas</h3>
-                    <p>From the insights we gathered through interviews, we were able to categorize them into three distinct groups, which we developed into our personas.</p>
-                    <div class="sub-sub-section">
-                        <script>
-                            let slideIndices = [1, 1, 1];
-                            let slideClassNames = ["mySlides1", "mySlides2", "mySlides3"];
-                            let dotClassNames = ["dot1", "dot2", "dot3"];
+                    <div class="sub-section">
+                        <h3>Personas</h3>
+                        <p>From the insights we gathered through interviews, we were able to categorize them into three distinct groups, which we developed into our personas.</p>
+                        <div class="sub-sub-section">
+                            <script>
+                                let slideIndices = [1, 1, 1];
+                                let slideClassNames = ["mySlides1", "mySlides2", "mySlides3"];
+                                let dotClassNames = ["dot1", "dot2", "dot3"];
 
-                            function plusSlides(n, no) {
-                            showSlides(slideIndices[no - 1] += n, no);
-                            }
+                                function plusSlides(n, no) {
+                                showSlides(slideIndices[no - 1] += n, no);
+                                }
 
-                            function currentSlide(n, no) {
-                            showSlides(slideIndices[no - 1] = n, no);
-                            }
+                                function currentSlide(n, no) {
+                                showSlides(slideIndices[no - 1] = n, no);
+                                }
 
-                            function showSlides(n, no) {
-                            let i;
-                            let slides = document.getElementsByClassName(slideClassNames[no - 1]);
-                            let dots = document.getElementsByClassName(dotClassNames[no - 1]);
+                                function showSlides(n, no) {
+                                let i;
+                                let slides = document.getElementsByClassName(slideClassNames[no - 1]);
+                                let dots = document.getElementsByClassName(dotClassNames[no - 1]);
 
-                            if (n > slides.length) slideIndices[no - 1] = 1;
-                            if (n < 1) slideIndices[no - 1] = slides.length;
+                                if (n > slides.length) slideIndices[no - 1] = 1;
+                                if (n < 1) slideIndices[no - 1] = slides.length;
 
-                            for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";
-                            }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
 
-                            for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                            }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
 
-                            slides[slideIndices[no - 1] - 1].style.display = "block";
-                            if (dots.length) {
-                                dots[slideIndices[no - 1] - 1].className += " active";
-                            }
-                            }
+                                slides[slideIndices[no - 1] - 1].style.display = "block";
+                                if (dots.length) {
+                                    dots[slideIndices[no - 1] - 1].className += " active";
+                                }
+                                }
 
-                            // Initialize both carousels
-                            showSlides(1, 1);
-                            showSlides(1, 2);
-                            showSlides(1, 3);
-                        </script>
-                        <div class="slideshow-container">
-                            <div class="mySlides1 fade">
-                                <img src="SevenSeas-imgs/personas/john.png" style="width:100%">
+                                // Initialize both carousels
+                                showSlides(1, 1);
+                                showSlides(1, 2);
+                                showSlides(1, 3);
+                            </script>
+                            <div>
+                                <div class="slideshow-container">
+                                    <div class="mySlides1 fade">
+                                        <img src="SevenSeas-imgs/personas/john.png" style="width:100%">
+                                    </div>
+                                    
+                                    <div class="mySlides1 fade" style="display: none;">
+                                        <img src="SevenSeas-imgs/personas/jane.png" style="width:100%">
+                                    </div>
+                                    
+                                    <div class="mySlides1 fade" style="display: none;">
+                                        <img src="SevenSeas-imgs/personas/pam.png" style="width:100%">
+                                    </div>
+                                    
+                                    
+                                    <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1,1)">❯</a>
+                                </div>
+                                <div class="hidden" style="text-align:center">
+                                    <span class="dot dot1" onclick="currentSlide(1,1)"></span> 
+                                    <span class="dot dot1" onclick="currentSlide(2,1)"></span> 
+                                    <span class="dot dot1" onclick="currentSlide(3,1)"></span>    
+                                </div>
                             </div>
-                            
-                            <div class="mySlides1 fade hidden">
-                                <img src="SevenSeas-imgs/personas/jane.png" style="width:100%">
-                            </div>
-                            
-                            <div class="mySlides1 fade">
-                                <img src="SevenSeas-imgs/personas/pam.png" style="width:100%">
-                            </div>
-                            
-                            
-                            <a class="prev" onclick="plusSlides(-1,1)">❮</a>
-                            <a class="next" onclick="plusSlides(1,1)">❯</a>
                         </div>
-                        
-                        <div class="hidden" style="text-align:center">
-                            <span class="dot dot1" onclick="currentSlide(1,1)"></span> 
-                            <span class="dot dot1" onclick="currentSlide(2,1)"></span> 
-                            <span class="dot dot1" onclick="currentSlide(3,1)"></span>    
+                        <p>Based on these personas, we created user scenarios and user cases tailored to the Seven Seas website. Ultimately, we translated our findings into a functionality and features table, ensuring that the website captured features that aligned with both user needs and the client’s specific requests. Creating this table provided our team with a guideline to follow as we moved on to the next stages of our design.</p>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Features and Functionality Table:</h3>
+                        <table class="hidden show" border="1" cellpadding="16" cellspacing="2">
+                            <tbody><tr>
+                                <th>Features</th>
+                                <th class="checkbox">Client</th>
+                                <th>Personas</th>
+                            </tr>
+                            <tr>
+                                <td scope="row">Subscription + wholesale system</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Ratings and review system</td>
+                                <td class="checkbox"></td>
+                                <td>
+                                    Coffee enthusiast, Academic weapon, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Online menu</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Academic weapon, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Coffee bean comparisons</td>
+                                <td class="checkbox"></td>
+                                <td>
+                                Coffee enthusiast
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Updated coffee images + descriptions</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Emphasize the quality of coffee</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast, Academic weapon
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">More engaging content</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Showcase the uniqueness of coffee shop locations</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Academic weapon, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Information on the interior of each location</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Academic weapon, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Shares the backstory and sourcing of Seven Seas Roasting</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Sharing Seven Seas' impact on the community</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Strong branding</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Filter coffee selection</td>
+                                <td class="checkbox"></td>
+                                <td>
+                                Coffee enthusiast, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">View the ingredients in each menu item</td>
+                                <td class="checkbox"></td>
+                                <td>
+                                Coffee enthusiast, Taste tester
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Reflect atmosphere + branding of storefront on website</td>
+                                <td class="checkbox">☑</td>
+                                <td>
+                                Coffee enthusiast, Taste tester, Academic weapon
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="sub-section">
+                        <h3>Competitive audit </h3>
+                        <p>We then conducted a competitive anaylsis with the goal to learn more of design choices of competing coffee brands. We chose these competitors because (1) our stakeholders mentioned a few of these examples as the ideal site design (Onyx/Verve), and (2) the others are popular local specialty coffee roasters with great website designs and content.
+                        <br>
+                        <br>
+                        For each competitor, we conducted an in-depth analysis of their branding, functionality, content, and navigation. Ultimately, we synthesized our findings into a list of takeaways that we could implement on our website.</p>
+                        <div class="sub-sub-section">
+                            <div class="competitor">
+                                <div class="competitor-img">
+                                    <img src="SevenSeas-imgs/competitors/onyx.png" style="width: 100%;">
+                                    <small style="opacity: 60%;">ONYX Coffee Lab</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>ONYX Coffee Lab</p-semi>
+                                    <p>Onyx Coffee Lab presents a darker and grungy vibe which is close to Seven Seas branding. Their website provided customers with ample information on cafe amenities, at home brewing instructions, and coffee blends. However, we found some pages contained an overwhelming amount of information and animation.</p>
+                                </div>
+                            </div>
+                            <div class="competitor">
+                                <div class="competitor-img">
+                                    <img src="SevenSeas-imgs/competitors/birdrock.png" style="width: 100%;">
+                                    <small style="opacity: 60%;">Bird Rock Coffee Roasters</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Bird Rock Coffee Roasters</p-semi>
+                                    <p>Bird Rock Coffee conveys a warm and beachy atmosphere with their website. They highlight all of their coffee offerings and services with fun imagery and bubbly visual design. However, the branding lacks a coffee centric design which was something our client valued.</p>
+                                </div>
+                            </div>
+                            <div class="competitor">
+                                <div class="competitor-img">
+                                    <img src="SevenSeas-imgs/competitors/verve.png" style="width: 100%;">
+                                    <small style="opacity: 60%;">Verve Coffee</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Verve Coffee</p-semi>
+                                    <p>Verve Coffee has a modern and earthy vibe with its color schemes being muted color scheme and beige background. Their website includes many features to assist users in picking the correct coffee blend and subscription frequency.</p>
+                                </div>
+                            </div>
+                            <div class="competitor">
+                                <div class="competitor-img">
+                                    <img src="SevenSeas-imgs/competitors/bluebottle.png" style="width: 100%;">
+                                    <small style="opacity: 60%;">Blue Bottle Coffee</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Blue Bottle Coffee</p-semi>
+                                    <p>Blue Bottle Coffee’s website showcases the coffee subscription and best sellers with minimalistic images and icons. Similar to other competitors, it provided features to order ahead and at home brewing instructions.</p>
+                                </div>
+                            </div>
+                            <div class="competitor">
+                                <div class="competitor-img">
+                                    <img src="SevenSeas-imgs/competitors/lofty.png" style="width: 100%;">
+                                    <small style="opacity: 60%;">Lofty Coffee</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Lofty Coffee</p-semi>
+                                    <p>Lofty Coffee’s website focuses on their locally roasted coffee beans and products over aesthetics. Their website is minimally styled, which makes it lack in terms of illustrating the atmosphere and branding of Lofty.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paragraphs">
+                            <p-semi>Good design ideas we took away from our analysis:</p-semi>
+                            <ul>
+                                <li>Showcase each cafe location in detail by providing images, cafe amenities, menus</li>
+                                <li>Include a coffee calculator to help users determine the frequency of their coffee subscription</li>
+                                <li>Streamline primary labels so that secondary labels are less repetitive and easier to find</li>
+                                <li>Add wholesale and subscriptions to the main navigation bar for easy access</li>
+                            </ul>
+                        </div>
+                        <a class="button">
+                            <small style="font-weight: 500;">View competitive analysis</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Branding</h2>
+                <div class="section-content">
+                    <p>
+                        Upon further communication with the client, we established that the new website should keep the current color scheme (red and black as primary colors) but give off a stronger maritime theme.
+                        <br><br>
+                        We created 3 different mood boards and potential style directions based on each moodboard. Each style direction aimed to link/connect/reflect Seven Seas physical products or locations.
+                    </p>
+                    <div class="sub-sub-section">
+                        <div class="style-directions">
+                            <div class="mood-style">
+                                <img src="SevenSeas-imgs/moodborads/mood1.png" style="width: 100%;">
+                                <small style="justify-content: center">Moodboard 1</small>
+                            </div>
+                            <div class="mood-style">
+                                <img src="SevenSeas-imgs/moodborads/style1.png" style="width: 100%;">
+                                <small style="justify-content: center;">Style direction based on moodboard 1</small>
+                            </div>
                         </div>
                     </div>
                 </div>
