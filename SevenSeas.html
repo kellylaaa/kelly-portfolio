@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footnote.css">
         <link rel="stylesheet" href="styles/SevenSeas.css">
+        <link rel="stylesheet" href="flickity.css" media="screen">
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -97,7 +98,7 @@
                         <small>January - March 2025</small>
                     </div>
                     <a class="button" href="https://www.figma.com/proto/rALpb3Rg0NHnEBxupgy7ib/cogs187b?node-id=656-4410&t=yjbcEFj3cttfuKDg-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=656%3A4410">
-                        <small>View Final Prototype</small>
+                        <small style="font-weight: 500;">View Final Prototype</small>
                     </a>
                 </div>
                 <div class="section">
@@ -118,7 +119,7 @@
                                 <li>Ensure a maritime branding on the new website to reflect their physical locations</li>
                             </ul>
                             <a class="button">
-                                <small>View Creative Brief</small>
+                                <small style="font-weight: 500;">View Creative Brief</small>
                             </a>
                         </div>
                     </div>
@@ -147,13 +148,78 @@
                         </ul>
                         </div>
                         <a class="button">
-                            <small>View interview document</small>
+                            <small style="font-weight: 500;">View interview document</small>
                         </a>
                     </div>
                 </div>
                 <div class="sub-section">
                     <h3>Personas</h3>
                     <p>From the insights we gathered through interviews, we were able to categorize them into three distinct groups, which we developed into our personas.</p>
+                    <div class="sub-sub-section">
+                        <script>
+                            let slideIndices = [1, 1, 1];
+                            let slideClassNames = ["mySlides1", "mySlides2", "mySlides3"];
+                            let dotClassNames = ["dot1", "dot2", "dot3"];
+
+                            function plusSlides(n, no) {
+                            showSlides(slideIndices[no - 1] += n, no);
+                            }
+
+                            function currentSlide(n, no) {
+                            showSlides(slideIndices[no - 1] = n, no);
+                            }
+
+                            function showSlides(n, no) {
+                            let i;
+                            let slides = document.getElementsByClassName(slideClassNames[no - 1]);
+                            let dots = document.getElementsByClassName(dotClassNames[no - 1]);
+
+                            if (n > slides.length) slideIndices[no - 1] = 1;
+                            if (n < 1) slideIndices[no - 1] = slides.length;
+
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+
+                            slides[slideIndices[no - 1] - 1].style.display = "block";
+                            if (dots.length) {
+                                dots[slideIndices[no - 1] - 1].className += " active";
+                            }
+                            }
+
+                            // Initialize both carousels
+                            showSlides(1, 1);
+                            showSlides(1, 2);
+                            showSlides(1, 3);
+                        </script>
+                        <div class="slideshow-container">
+                            <div class="mySlides1 fade">
+                                <img src="SevenSeas-imgs/personas/john.png" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides1 fade hidden">
+                                <img src="SevenSeas-imgs/personas/jane.png" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides1 fade">
+                                <img src="SevenSeas-imgs/personas/pam.png" style="width:100%">
+                            </div>
+                            
+                            
+                            <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+                            <a class="next" onclick="plusSlides(1,1)">❯</a>
+                        </div>
+                        
+                        <div class="hidden" style="text-align:center">
+                            <span class="dot dot1" onclick="currentSlide(1,1)"></span> 
+                            <span class="dot dot1" onclick="currentSlide(2,1)"></span> 
+                            <span class="dot dot1" onclick="currentSlide(3,1)"></span>    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -85,10 +85,13 @@
     display: inline-block;
     justify-content: center;
     border-radius: 30px;
+    border: 2px solid #61380cc0;
 }
 
 .button:hover{
-    background-color: #61380cc0;
+    background-color: #f8f8f8;
+    color: #61380cc0;
+    border: 2px solid #61380cc0;
 }
 
 .section{
@@ -129,7 +132,6 @@ ul{
     gap: 10px;
 }
 
-
 .section-title{
     display: flex;
     justify-content: center;
@@ -142,3 +144,54 @@ ul{
     border-radius: 10px;
     border: 1px solid #000;
 }
+
+.sub-sub-section{
+    padding: 20px 50px;
+} 
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot.active, .dot:hover {
+    background-color: #ffffff;
+  }
