@@ -87,12 +87,11 @@
     border-radius: 30px;
     border: 2px solid #61380cc0;
     transition: 0.3s;
+    opacity: 1;
 }
 
 .button:hover{
-    background-color: #f8f8f8;
-    color: #61380cc0;
-    border: 2px solid #61380cc0;
+    opacity: 70%;
 }
 
 .section{
@@ -125,7 +124,7 @@
 }
 
 .sub-sub-section{
-    padding: 0px 50px;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -230,11 +229,14 @@ td.checkbox {
     vertical-align: middle;
 }
 
-.competitor{
+.categories-hoz{
     display: flex;
     gap: 50px;
-    align-self: stretch;
-    align-items: center;
+}
+
+.categories-ver{
+    display: flex;
+    flex-direction: column;
 }
 
 .competitor-img{
@@ -251,7 +253,11 @@ td.checkbox {
     flex: 1 0 0;
 }
 
-.style-directions{
-    display: flex;
-    gap: 30px;
+.img-description{
+    opacity: 60%;
+    justify-self: center;
+}
+
+.changes-img{
+    width: 200px;
 }
