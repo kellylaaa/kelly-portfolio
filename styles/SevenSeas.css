@@ -53,7 +53,7 @@
 
 .content{
     display: flex;
-    padding: 0px 300px;
+    padding: 0px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,7 @@
     display: flex;
     align-items: flex-start;
     gap: 80px;
+    padding: 0 300px;
 }
 
 .details{
@@ -76,8 +77,7 @@
 
 
 .button{
-    background-color: #61380C;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 40px;
     text-align: center;
     align-self: center;
@@ -85,13 +85,13 @@
     display: inline-block;
     justify-content: center;
     border-radius: 30px;
-    border: 2px solid #61380cc0;
+    border: 1px solid #3d3d3d;
     transition: 0.3s;
     opacity: 1;
 }
 
 .button:hover{
-    opacity: 70%;
+    background-color: #c4c4c4;
 }
 
 .section{
@@ -108,6 +108,7 @@
     display: flex;
     gap: 60px;
     flex-direction: column;
+    padding: 0 300px;
 }
 
 .sub-section{
@@ -146,13 +147,13 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
-    border-radius: 5px;
-    margin: 15px 0;
+    padding: 40px 0px;
+    margin-top: 30px;
+    margin: 15px 00px;
     align-self: stretch;
 
-    border-radius: 10px;
-    border: 1px solid #000;
+    background-color: #61380C;
+    color: white;
 }
 
 .slideshow-container {
