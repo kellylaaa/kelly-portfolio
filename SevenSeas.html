@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Kelly La</title>
 
         <!-- css links -->
@@ -14,6 +15,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+        <!-- scripts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const videos = document.querySelectorAll(".categories-hoz video");
+        
+            videos.forEach((video) => {
+                video.addEventListener("mouseenter", () => {
+                video.play().catch(err => console.error("Play failed:", err));
+                });
+        
+                video.addEventListener("mouseleave", () => {
+                video.pause();
+                });
+            });
+            });
+        </script>
         
     </head>
     <body>
@@ -65,7 +83,7 @@
                 
                   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
                 });
-                </script> 
+            </script> 
         </header> 
 
         <div class="landing">
@@ -74,7 +92,7 @@
                     <div class="logo-container">
                         <img class="logo" src="SevenSeas-imgs/sevenseas-logo.svg">
                     </div>
-                    <h3 style="font-weight: 400;">Designing a website for Seven Seas Coffee</h3>
+                    <h3 style="font-weight: 400;">Designing a website for Seven Seas Roasting Co.</h3>
                 </div>
                 <div class="landing-img-container">
                     <img class="landing-img" src="SevenSeas-imgs/landing-img.png">
@@ -118,7 +136,7 @@
                                 <li>Showcase the uniqueness of coffee shop locations and farmers’ market booths</li>
                                 <li>Ensure a maritime branding on the new website to reflect their physical locations</li>
                             </ul>
-                            <a class="button">
+                            <a class="button" href="SevenSeas-imgs/Creative-Brief.pdf" target="_blank"> 
                                 <small style="font-weight: 500;">View Creative Brief</small>
                             </a>
                         </div>
@@ -145,7 +163,7 @@
                                 </ul>
                             </ul>
                         </div>
-                        <a class="button">
+                        <a class="button" href="SevenSeas-imgs/User-Interviews.pdf" target="_blank">
                             <small style="font-weight: 500;">View interview document</small>
                         </a>
                     </div>
@@ -404,7 +422,7 @@
                                 <li>Add wholesale and subscriptions to the main navigation bar for easy access</li>
                             </ul>
                         </div>
-                        <a class="button">
+                        <a class="button" href="SevenSeas-imgs/Competitive-Analysis-and-Moodboard.pdf" target="_blank">
                             <small style="font-weight: 500;">View competitive analysis</small>
                         </a>
                     </div>
@@ -570,23 +588,25 @@
                 <div class="section-content">
                     <div class="sub-section">
                         <p>Hover over the images to view pages of our final product</p>
-                        <div class="sub-sub-section">
-                            <div class="categories-hoz">
-                                <div>
-                                    <img src="SevenSeas-imgs/final-prototype/placeholder.png" style="width: 100%">
-                                    <small class="img-description">Homepage</small>
-                                </div>
-                                <div>
-                                    <img src="SevenSeas-imgs/final-prototype/placeholder.png" style="width: 100%">
-                                    <small class="img-description">Homepage</small>
-                                </div>
-                                <div>
-                                    <img src="SevenSeas-imgs/final-prototype/placeholder.png" style="width: 100%">
-                                    <small class="img-description">Homepage</small>
-                                </div>
+                        <div class="categories-hoz">
+                            <div>
+                                <video width="100%" src="SevenSeas-imgs/final-prototype/homepage.mp4" muted loop preload="metadata"></video>
+                                <small class="img-description">Homepage</small>
+                            </div>
+                            <div>
+                                <video width="100%" src="SevenSeas-imgs/final-prototype/coffee-beans.mp4" muted loop preload="metadata"></video>
+                                <small class="img-description">Product page</small>
+                            </div>
+                            <div>
+                                <video width="100%" src="SevenSeas-imgs/final-prototype/location.mp4" muted loop preload="metadata"></video>
+                                <small class="img-description">Indiviual location page</small>
+                            </div>
+                            <div>
+                                <video width="100%" src="SevenSeas-imgs/final-prototype/subscription.mp4" muted loop preload="metadata"></video>
+                                <small class="img-description">Subscription page</small>
                             </div>
                         </div>
-                        <div class="button">View final product</div>
+                        <a class="button" href="https://www.figma.com/proto/rALpb3Rg0NHnEBxupgy7ib/cogs187b?node-id=656-4410&starting-point-node-id=656%3A4410&t=HFv6giU4YSS8HRGF-1">View final product</a>
                     </div>
                 </div>
             </div>

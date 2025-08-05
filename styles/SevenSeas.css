@@ -13,14 +13,14 @@
     display: flex;
     flex-direction: column;
     padding: 0 200px;
-    gap: 25px;
+    gap: 50px;
 }
 
 .logo-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
     align-self: stretch;
 }
 
@@ -41,7 +41,7 @@
     justify-content: center;
     object-fit: cover;
     display: block;
-    background-color: #61380C;
+    background: linear-gradient(150deg, #61380C 20.2%, #7d5a35 100%);
     padding: 50px 150px;
     border-radius: 5px;
 }
@@ -232,7 +232,7 @@ td.checkbox {
 
 .categories-hoz{
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .categories-ver{
@@ -261,4 +261,12 @@ td.checkbox {
 
 .changes-img{
     width: 200px;
+}
+
+video{
+    object-fit: contain;
+    cursor: pointer;
+    overflow: clip;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
