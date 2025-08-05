@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 200px;
-    height: 110px;
+    height: 100px;
 
     position: fixed;
     top: 0;
@@ -53,4 +53,6 @@ header{
 .icon-container, .icon-container{
     height: 22px;
     aspect-ratio: 1/1;
+    border: none;
+    border-radius: 0px;
 }
