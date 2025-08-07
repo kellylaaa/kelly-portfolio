@@ -40,7 +40,7 @@
     justify-content: center;
     object-fit: cover;
     display: block;
-    background: linear-gradient(150deg, #e8c39b 20.2%, #e2ba8f 100%);
+    background: linear-gradient(150deg, #542020 20.2%, #713535 100%);
     padding: 50px 150px;
     border-radius: 5px;
     display: flex;
@@ -78,7 +78,7 @@
 
 
 .button{
-    color: rgb(0, 0, 0);
+    color: #000000;
     padding: 10px 40px;
     text-align: center;
     align-self: center;
@@ -141,7 +141,10 @@ ul{
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    gap: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 50px;
 }
 
 .section-title{
