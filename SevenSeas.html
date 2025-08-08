@@ -77,6 +77,7 @@
             showSlides(1, 4);
             showSlides(1, 5);
         </script>
+
         
     </head>
     <body>
@@ -130,6 +131,28 @@
                 });
             </script> 
         </header> 
+
+        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+
+        <script>
+            const scrollToTopButton = document.getElementById("scrollBtn");
+
+            window.addEventListener("scroll", () => {
+            if (window.scrollY >= 200) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+            });
+
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+        </script>
 
         <div class="landing">
             <div class="landing-content">
