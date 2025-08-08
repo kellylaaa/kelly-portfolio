@@ -33,17 +33,21 @@
     width: 100vw;
     position: relative;
     
+    
     display: flex;
     align-items: center;
     padding-top: 140px;
+    padding-bottom: 50px;
     flex-direction: column;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    background: radial-gradient(50% 50% at 32.97% 50%, #87603a 0%, #7b4928 100%);
 }
 
 .landing-content{
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
+    padding: 30px 200px;
     align-items: center;
     align-self: stretch;
 }
@@ -58,7 +62,7 @@
 
 .logo-container{
     display: block;
-    height: 90px;
+    height: 80px;
 }
 
 .logo{
@@ -71,14 +75,13 @@
     justify-content: center;
     object-fit: cover;
     display: block;
-    background: linear-gradient(150deg, #d6ad80 20.2%, #dbbc9b 100%);
-    padding: 50px 150px;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
 }
 
 .landing-img{
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
