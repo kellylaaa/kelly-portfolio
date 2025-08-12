@@ -109,3 +109,47 @@ body{
         justify-content: center;
         text-align: left;
     }
+
+    #scrollBtn {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+    }
+    
+/* Visible state */
+#scrollBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hover effect (only works when .show is active) */
+#scrollBtn.show:hover {
+    opacity: 0.7;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Show when in view */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

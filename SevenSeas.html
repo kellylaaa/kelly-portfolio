@@ -157,22 +157,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--
-                        <div class="paragraphs fade-in">
-                            <p>From our interviewees, we found that they go to cafes for 1 of these 3 reasons:</p>
-                            <ul>
-                                <li>The coffee quality is better than that of other coffee shops</li>
-                                <li>They need a location where they can study and work.</li>
-                                <ul>
-                                    <li>Often people need to find out what amenities a location has to offer (free wifi, seating, etc.)</li>
-                                </ul>
-                                <li>They are taste-testing coffees from many different locations</li>
-                                <ul>
-                                    <li>Prefer to browse menus online before making a decision on which coffee shop to visit</li>
-                                </ul>
-                            </ul>
-                        </div>
-                        -->
                         <a class="button fade-in" href="SevenSeas-imgs/User-Interviews.pdf" target="_blank">
                             <small style="font-weight: 500;">View interview document</small>
                         </a>
@@ -439,7 +423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sub-section fade-in">
+                    <div class="sub-section">
                         <p>Based on our client's preferences, we landed on direction 2 and put together a style guide.</p>
                         <div class="sub-sub-section">
                             <div class="mood-style">    
@@ -521,7 +505,7 @@
                                 <small class="img-description">Stickersheet of components</small>
                             </div>
                         </div>
-                        <p class="fade-in">We then were able to efficiently design our initial high fidelity prototype of all the screens and functionalities we planned to include. We incorporated features based on our initial interviews, our client's goals, and drew inspiration from our competitors.</p>
+                        <p class="fade-in">We then were able to efficiently design our initial high fidelity prototype of all the screens and functionalities we planned to include. We incorporated features based on our initial interviews and our client's goals.</p>
                         <div class="sub-section">
                             <h3 class="fade-in">Our key functionalities</h3>
                             <div class="sub-sub-section fade-in">
@@ -621,29 +605,71 @@
                 <h2 class="section-title fade-in">Usability testing</h2>
                 <div class="section-content">
                     <div class="sub-section">
-                        <p class="fade-in">
-                            To test our prototype, we first held a critique session with other designers to discuss the visual design details and overall user flow.
-                            <br><br>
-                            Through the critique, we decided to make changes to:
-                            <ul>
-                                <li class="fade-in"><strong>Quantity adjustment buttons:</strong> <br> We decided to make the buttons smaller to match the size of the numbers & text.</li>
-                                <li class="fade-in"><strong>Desktop navigation padding and alignment:</strong><br>Changes to our “Services” drop down tab because it is slightly different from the other tabs. Every tab should look consistent.</li>
-                                <li class="fade-in"><strong>Add cart preview:</strong><br>This will give users the option to see what is in their cart before leaving their current page. This additional feature provides users with more flexibility in their purchasing process.</li>
-                                <li class="fade-in"><strong>Fix scroll behavior on prototype settings:</strong><br>We agree with their suggestion because this is typical for websites to bring the user to the top of a new page. It was a mistake we made when creating the flow on prototype settings.</li>
-                                <li class="fade-in"><strong>Desktop title card for all pages:</strong><br>To make it less confusing to less experienced users, we decided to add a “view more” button to inform users that there is more on the page and it is scrollable. </li>
-                            </ul>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Peer Feedback</h3>
                             <p class="fade-in">
-                                Then, we conducted a final user testing session on two users that we could fit within the timeline of the project, asking that they perform some of the important tasks on our website. Here's what we learned and what we fixed:
+                                To test our prototype, we first held a critique session with other designers to discuss the visual design details and overall user flow. Through the critique, we decided to make changes to:
                             </p>
                             <ul>
-                                <li class="fade-in">
-                                    <strong>User 1:</strong> After testing user 1, we learned that some buttons may not be obvious to find. The user found it difficult to find where to access the “Subscription Calculator.” To fix this, we decided to add a bigger button as another entry point to access the “Subscription Calculator” where it wasn't hidden. Another thing we fixed based on their feedback was the “Order Ahead” button on the menu page. The user found it very easy to overlook the “Order Ahead” button on top of the menu page when scrolling down. So to fix this, we decided to add a static “Order Ahead” button on the menu page where users can access this button anytime on the page.
-                                </li>
-                                <li class="fade-in">
-                                    <strong>User 2:</strong> We learned that the coffee subscription calculator didn't have a visible enough call-to-action because the user struggled to find it. As mentioned above, we added a larger button to access the subscription calculator to make it more noticeable. The user mentioned that she could not go back between pages easily, which made navigation difficult. To address this, we will be adding swipe gestures to go back and forth between pages to mimic the behavior of mobile browsers. Additionally, she didn't like the placement of “subscription” in the navigation bar because it felt hidden when nested within “services.” After some consideration, we decided not to move the “subscription” out of the “services” tab because it would create too many primary labels in our navigation bar and potentially overwhelm visitors.
-                                </li>
+                                <li class="fade-in">Quantity adjustment buttons</li>
+                                <li class="fade-in">Desktop navigation padding and alignment</li>
+                                <li class="fade-in">Add cart preview</li>
+                                <li class="fade-in">Fix scroll behavior on prototype settings</li>
+                                <li class="fade-in">Desktop title card for all pages</li>
                             </ul>
-                        </p>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">User testing</h3>
+                            <p class="fade-in">
+                                Then, we conducted a final user testing session on two users that we could fit within the timeline of the project, asking that they perform some of the important tasks on our website. Here's what we learned:
+                            </p>
+                            <ul>
+                                <li class="fade-in">Users found it difficult to find where to access the “Subscription Calculator."</li>
+                                <li class="fade-in">Easy to overlook the “Order Ahead” button on top of the menu page when scrolling down</li>
+                                <li class="fade-in">Going back to previous pages were not easy, which made navigation difficult.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Iterations</h3>
+                            <ul style="gap:50px; list-style-position: inside; padding:0;">
+                                <div class="categories-ver">
+                                    <li class="fade-in">To improve user's purchasing experience, we decided to add a <strong>cart preview</strong> feature to give users the option to see what is in their cart before leaving their current page.</li>
+                                    <div class="mood-style fade-in">
+                                        <img class="iteration-img"  src="SevenSeas-imgs/iterations/cart-preview.png">
+                                        <small class="img-description">Cart Preview</small>
+                                    </div>
+                                </div>
+                                <div class="categories-ver">
+                                    <li class="fade-in">We decided to add a <strong>view more</strong> button to inform users that there is more on the page and it is scrollable.</li>
+                                    <div>
+                                        <img class="iteration-img fade-in" src="SevenSeas-imgs/iterations/view-more.jpeg">
+                                        <small class="img-description">Landing page</small>
+                                    </div>
+                                </div>
+                                <div class="categories-ver">
+                                    <li class="fade-in">To help users find the <strong>Subscription Calculator</strong>, we added another entry point that draws attention to the feature.</li>
+                                    <div class="categories-hoz fade-in">
+                                        <div>
+                                            <img class="iteration-img" src="SevenSeas-imgs/iterations/subcalc1.jpeg">
+                                            <small class="img-description">New entry point</small>
+                                        </div>
+                                        <div>
+                                            <img class="iteration-img" src="SevenSeas-imgs/iterations/subcalc3.PNG">
+                                            <small class="img-description">After using the <br>Subscription Calculator</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categories-ver">
+                                    <li class="fade-in">To help users easily access the <strong>Order Now</strong> button, we added a static “Order Ahead” button on the menu page where users can access this button anytime on the page.</li>
+                                    <div >
+                                        <video class="iteration-img fade-in" src="SevenSeas-imgs/iterations/ordernow.mp4" autoplay playinline muted loop preload="metadata"></video>
+                                        <small class="img-description">LocationMenu</small>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -653,7 +679,7 @@
                 <div class="section-content" style="padding:0 200px;">
                     <div class="sub-section" style="align-items: center;">
                         <p class="fade-in">Hover over each page to view our final product!</p>
-                        <div class="categories-hoz fade-in">
+                        <div class="five-vid fade-in">
                             <div>
                                 <video width="100%" src="SevenSeas-imgs/final-prototype/homepage.mp4" muted loop preload="metadata"></video>
                                 <small class="img-description">Homepage</small>

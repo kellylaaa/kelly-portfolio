@@ -67,18 +67,20 @@
                 </script> 
         </header> 
 
+        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+
         <div class="landing">
             <img class="landing-star" src="homepage-imgs/landing-stars.png">
             <div class="landing-content">
                 <div class="landing-text">
-                    <h3 style="font-weight: 400; ">Hello, I'm
+                    <h3 style="font-weight: 400;" class="fade-in">Hello, I'm
                         <a href="about.html" class="name-link">
                         Kelly La</a>.</h3>
-                    <homepage-ux>ux designer</homepage-ux>
-                    <h2 class="intro-description" style="font-weight: 300;">with a passion for creating useful and engaging experiences.</h2>
+                    <homepage-ux class="fade-in">ux designer</homepage-ux>
+                    <h2 class="intro-description fade-in" style="font-weight: 300;">with a passion for creating useful and engaging experiences.</h2>
                 </div>
             </div>
-            <div class="view-works">
+            <div class="view-works fade-in">
                 <a href="index.html#works">
                     <img class="view-works-icon" src="homepage-imgs/view-works-circle.svg">
                 </a>
@@ -91,16 +93,16 @@
             <a class="project-box" href="SevenSeas.html"
                 style="padding: 140px 200px;">
                 <div class="project">
-                    <div class="wireframe-container">
+                    <div class="wireframe-container fade-in">
                         <img class="wireframe-img" src="homepage-imgs/seven-seas.png">
                     </div> 
                     <div class="all-projects-text" >
                         <div class="project-text">
                             <div class="project-title">
-                                <h1 class="project-name">Seven Seas Roasting Co.</h1>
-                                <p class="feature-text">Website Redesign</p>
+                                <h1 class="project-name fade-in">Seven Seas Roasting Co.</h1>
+                                <p class="feature-text fade-in">Website Redesign</p>
                             </div>
-                            <p> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
+                            <p class="fade-in">Seven Seas Roasting Co. website redesign aimed to draw in customers and highlighting provided services</p>
                             <div class="project-extra">
                                 <small> Role: UX Designer, UX Reacher, Visual Design</small>
                                 <small> Tool: Figma</small>
@@ -120,18 +122,18 @@
             <a class="project-box" href="KioskOnTour.html"
                 style="background-color: #d4e0ff;">
                 <div class="project">
-                    <div class="wireframe-container-dark">
+                    <div class="wireframe-container-dark fade-in">
                         <img class="wireframe-img" src="homepage-imgs/kiosk-on-tour.png">
                     </div> 
                     <div class="all-projects-text">
                         <div class="project-text">
                             <div class="project-title">
-                                <h1 class="project-name">Kiosk on Tour</h1>
-                                <p class="feature-text">
+                                <h1 class="project-name fade-in">Kiosk on Tour</h1>
+                                <p class="feature-text fade-in">
                                 Concert merchandise kiosks</p>
                             </div>
-                            <p> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
-                            <div class="project-extra">
+                            <p class="fade-in"> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
+                            <div class="project-extra fade-in">
                                 <small> Role: UX Designer, UX Reacher, Visual Design</small>
                                 <small> Tool: Figma</small>
                                 <small> Timeline: September - December 2024</small>
@@ -149,17 +151,17 @@
             <!-- cooklaborate -->
              <a class="project-box" href="Cooklaborate.html">
                 <div class="project">
-                    <div class="wireframe-container">
+                    <div class="wireframe-container fade-in">
                         <img class="wireframe-img" src="homepage-imgs/cooklaborate.png">
                     </div> 
                     <div class="all-projects-text" >
                         <div class="project-text">
                             <div class="project-title">
-                                <h1 class="project-name">Cooklaborate</h1>
-                                <p class="feature-text">Meal Swapping App</p>
+                                <h1 class="project-name fade-in">Cooklaborate</h1>
+                                <p class="feature-text fade-in">Meal Swapping App</p>
                             </div>
-                            <p> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
-                            <div class="project-extra">
+                            <p class="fade-in"> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
+                            <div class="project-extra fade-in">
                                 <small> Role: UX Designer, UX Reacher, Visual Design</small>
                                 <small> Tool: Figma</small>
                                 <small> Timeline: January - March 2024</small>
@@ -189,5 +191,47 @@
                 </div>
             </div>
         </div>
+
+        <!--fade-in animation-->
+        <script>
+            const faders = document.querySelectorAll('.fade-in');
+            
+            const appearOptions = {
+                threshold: 0.2
+            };
+            
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // animate only once
+                });
+            }, appearOptions);
+            
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        </script>
+
+        <!--scroll to top arrow-->
+        <script>
+            const scrollToTopButton = document.getElementById("scrollBtn");
+
+            window.addEventListener("scroll", () => {
+            if (window.scrollY >= 200) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+            });
+
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+        </script>
     </body>
 </html>
