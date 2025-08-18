@@ -6,7 +6,7 @@
         <!-- css links -->
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/homepage.css">
+        <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/footnote.css">
 
         <!-- fonts -->
@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         
     </head>
-    <body>
+    <body style="gap: 0;">
         <header id="header" onclick="window.scrollTo(0, 0);">
             <a class="link" href="index.html">
                     Kelly La
@@ -67,6 +67,54 @@
                 </script> 
         </header> 
 
+        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+
+        <div class="content">
+            <div class="landing">
+                <div class="left">
+                    <div class="intro">
+                        <p class="fade-in">Nice to see you here,</p>
+                        <h1 class="fade-in">I'm Kelly!</h1>
+                    </div>
+                    <div class="description">
+                        <small class="fade-in">As a UX Designer, I am passionate about improving everyday experiences through design. I love learning about new things and how people think so to me, the best designs begins with a genuine curiosity in people’s challenges and motivations.</small>
+                        <small class="fade-in">I studied Cognitive Science with a specialization in Design and Interaction and minored in Computer Science at UC San Diego.</small>
+                    </div>
+                    <a class="button fade-in" href="Kelly La’s Resume.pdf" target="_blank">
+                        <small style="font-weight: 500; text-align: center;">View my resume</small>
+                    </a>
+                </div>
+                <div class="right fade-in">
+                    <img style="width: 100%; height: 100%; border-radius: 3px;" src="about-imgs/main.JPG">
+                </div>
+            </div>
+            <div class="extra">
+                <h2 class="fade-in">In my free time you can find me...</h2>
+                <div class="activity-pics fade-in">
+                    <div class="ver">
+                        <img class="activity" src="about-imgs/knitting.JPG">
+                        <small>knitting</small>
+                    </div>
+                    <div class="ver">
+                        <img class="activity" src="about-imgs/nails.JPG">
+                        <small>doing my nails</small>
+                    </div>
+                    <div class="ver">
+                        <img class="activity" src="about-imgs/camera.JPG">
+                        <small>capturing the moment</small>
+                    </div>
+                    <div class="ver">
+                        <img class="activity" src="about-imgs/travel.jpg">
+                        <small>travelling</small>
+                    </div>
+                    <div class="ver">
+                        <img class="activity" src="about-imgs/food.jpg">
+                        <small>trying new restaurants</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footnote">
             <p>© 2025 Kelly La</p>
             <div class="nav-items">
@@ -81,5 +129,49 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!--fade-in animation-->
+        <script>
+            const faders = document.querySelectorAll('.fade-in');
+          
+            const appearOptions = {
+              threshold: 0.2
+            };
+          
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // animate only once
+              });
+            }, appearOptions);
+          
+            faders.forEach(fader => {
+              appearOnScroll.observe(fader);
+            });
+        </script>
+
+        <!--scroll to top arrow-->
+        <script>
+            const scrollToTopButton = document.getElementById("scrollBtn");
+
+            window.addEventListener("scroll", () => {
+            if (window.scrollY >= 200) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+            });
+
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+        </script>
     </body>
 </html>
