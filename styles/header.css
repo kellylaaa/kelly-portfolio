@@ -7,8 +7,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 200px;
-    height: 100px;
+    padding: 25px 200px;
 
     position: fixed;
     top: 0;

@@ -106,10 +106,12 @@
     gap: 70px;
     color: black;
     transition: 0.5s;
+    opacity: 0.9;
 }
 
 .project:hover{
     transform: scale(1.015);
+    opacity: 1;
 }
 
 .wireframe-container{
