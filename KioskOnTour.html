@@ -6,8 +6,8 @@
         <!-- css links -->
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/homepage.css">
         <link rel="stylesheet" href="styles/footnote.css">
+        <link rel="stylesheet" href="styles/kiosktour.css">
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,6 +69,282 @@
                 </script> 
         </header> 
 
+        <div class="landing">
+            <div class="landing-content">
+                <div class="logo-container fade-in">
+                    <img class="logo" src="kioskTour-imgs/koisk-logo.svg" style="border: none; border-radius:0;">
+                </div>
+                <h2 class="fade-in" style="font-weight:300; text-align: center; width: 50%;">Speeding up the purchasing process for concert merchandise through self-service kiosks</h2>
+                <div class="landing-img-container fade-in">
+                    <img class="landing-img" src="kioskTour-imgs/landing-img.png" style="border: none;  border-radius:0;">
+                </div>
+            </div>
+        </div>
+
+        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+
+        <div class="content">
+            <div class="overview">
+                <div class="details">
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Role</small>
+                        <small>UX Design, UX Research, <br> Visual Design</small>
+                    </div>
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Tool</small>
+                        <small>Figma, Inkscape</small>
+                    </div>
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Timeline</small>
+                        <small>September - December 2024</small>
+                    </div>
+                    <a class="button fade-in" href="https://www.figma.com/proto/rRPSES03n33MdcsN8CSTnl/A4-Merchandise-Kiosk?node-id=45-279&p=f&t=23Qs3nflRQNZXzpn-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A2221&starting-point-node-id=45%3A279">
+                        <small style="font-weight: 500;">View Final Prototype</small>
+                    </a>
+                </div>
+                <div class="section">
+                    <div class="sub-section fade-in">
+                        <div class="paragraphs">
+                            <p>In the recent years, concerts have become very popular and people are attending multiple events a year. Many people wish to buy merchandise as a souvenir for a concert.</p>
+                            <p>From personal experience and observations, lines for merchandise are extremely long and have become stressful to obtain. Fans can only purchase merchandise in a small window of time, creating long lines at venues due to limited staff or lack of space.</p>
+                            <p>This project aims to create a physical interactive kiosks to combat the current limitations and frustrations customers encounter so we wanted to make a concert kiosk to address this problem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Online Research and Fieldwork</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <div class="paragraphs">
+                            <h3 class="fade-in">The current process for buying concert merchandise</h3>
+                            <p class="fade-in">
+                                To get a sense of the current experience in buying concert merchandise, we explored 10 different articles and reddit posts and found 4 common problems fans face. 
+                            </p>
+                        </div>
+                        <div class="sub-sub-section">
+                            <div class="fade-in" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                                <div class="categories-ver">
+                                    <img class="research-icon" src="kioskTour-imgs/research/clock.svg">
+                                    <p-semi>Arrival Time</p-semi>
+                                    <small style="text-align: center;">Online users expressed concern about how early they need to arrive at the venue if they want to buy merch.</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img class="research-icon" src="kioskTour-imgs/research/bag.svg">
+                                    <p-semi>Holding onto
+                                        merch</p-semi>
+                                    <small style="text-align: center;">Not all concerts give out bags for merch and it’s a hassle to hold it if they purchase before the concert.</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img class="research-icon" src="kioskTour-imgs/research/store.svg">
+                                    <p-semi>Lack of merch tents</p-semi>
+                                    <small style="text-align: center;">Online users were
+                                        frustrated with the lack of
+                                        merchandise tents which caused the line to be exceptionally long and some fans were unable to purchase merch. The
+                                        lack of merch tents could be
+                                        due to available staff,
+                                        space, or time.</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img class="research-icon" src="kioskTour-imgs/research/size.svg">
+                                    <p-semi>Sizing</p-semi>
+                                    <small style="text-align: center;">Some online users were
+                                        not sure about which
+                                        sizes to get, while others
+                                        were given the wrong size
+                                        at the merchandise
+                                        booths, leading to people
+                                        asking online for possible
+                                        trades in shirt designs
+                                        and sizes.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3 class="fade-in">Competitive analysis</h3>
+                        <p class="fade-in"> We looked into existing interactive kiosks to understand how they addressed the product vending experience. </p>
+                        <div class="sub-sub-section">
+                            <div class="categories-hoz fade-in">
+                                <div class="competitor-img">
+                                    <img src="kioskTour-imgs/research/uniqlo.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                                    <small style="opacity: 60%;">Uniqlo Vending Machine</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Uniqlo Vending Machine</p-semi>
+                                    <ul style="padding: 0 30px;">
+                                        <li>Limited selection of item (best-selling items only)</li>
+                                        <li>Displays products in a compact box</li>
+                                        <li>Offers steps to selecting an item (color and size) before adding it to cart</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="categories-hoz fade-in">
+                                <div class="competitor-img">
+                                    <img src="kioskTour-imgs/research/popmart.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                                    <small style="opacity: 60%;">Popmart Vending Machine</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Popmart Vending Machine</p-semi>
+                                    <ul style="padding: 0 30px;">
+                                        <li>Provides in depth information on each product</li>
+                                        <li>Displays selected figurines for people to see</li>
+                                        <li>Does not allow the user to pick a specific unit, unlike in store. This is important since each box has a different figure inside.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="categories-hoz fade-in">
+                                <div class="competitor-img">
+                                    <img src="kioskTour-imgs/research/benefit.jpg" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
+                                    <small style="opacity: 60%;">Benefit Vending Machine</small>
+                                </div>
+                                <div class="competitor-text">
+                                    <p-semi>Benefit Vending Machine</p-semi>
+                                    <ul style="padding: 0 30px;">
+                                        <li>Includes list of all products with rating</li>
+                                        <li>Detailed product description</li>
+                                        <li>Can’t tell if product is out of stock from the homepage</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3 class="fade-in">Field Observations</h3>
+                        <p class="fade-in"> For our fieldwork, we observed 1 concert merchandise line (Sabrina Carpenter's Short n’ Sweet Concert @ Chase Center San Francisco), and 3 interactive kiosks (Popmart & Benefit Vending Machine and Uniqlo self-checkout). Observing the concert merch line was helpful to understand the built enviroment and the target audience for our kiosk. While observing kiosks gave us a better sense of how people interacted with product-dispensing kiosks.</p>
+                        <div class="sub-sub-section fade-in">
+                            <table class="fade-in" border="1" cellpadding="16" cellspacing="2" >
+                                <tbody><tr>
+                                    <th class="checkbox">Concert line</th>
+                                    <th>Kiosks</th>
+                                    <tr>
+                                        <td scope="row"> Average transaction time: 5-8 minutes.
+                                            <ul style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 27px;">
+                                                <li> Longer transactions were often due to uncertainty of size selection</li>
+                                                <li>Some people wanted to try on the items before purchasing</li>
+                                            </ul>
+                                            </td>
+                                        <td> Average transaction time: 3 minutes
+                                            <ul style="font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 27px;">
+                                                <li>People broswering were typically in groups
+                                                    of 2 to 5 (Popmart)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"> 2 hours before the concert, the line was roughly 45min-1hr</td>
+                                        <td> Having multiple kiosks helped long lines move quickly (Uniqlo)</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Decided on what item to purchase quickly since the products were displayed</td>
+                                        <td> People were able to quickly view whether a product was in stock (PopMart & Benefit)</td>
+                                    </tr>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Visualizing the situation through personas and storyboards</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in"> Based off of our online research and fieldwork, we created our two personas: Pamela and Jasmine.</p>
+                        <div class="sub-sub-section fade-in">
+                            <div>
+                                <div class="slideshow-container">
+                                    <div class="mySlides1 fade">
+                                        <img src="kioskTour-imgs/research/Pam.png" style="width:100%">
+                                    </div>
+                                    
+                                    <div class="mySlides1 fade" style="display: none;">
+                                        <img src="kioskTour-imgs/research/Jasmine.png" style="width:100%">
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1,1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1,1)">❯</a>
+                                </div>
+                                <div class="hidden" style="text-align:center">
+                                    <span class="dot dot1" onclick="currentSlide(1,1)"></span> 
+                                    <span class="dot dot1" onclick="currentSlide(2,1)"></span>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <p class="fade-in">Using these personas, we created storyboards to conceptualize actual usage scenarios and brainstorm how we could utilize a kiosk to address the pain points our personas face</p>
+                        <div class="sub-sub-section fade-in" style="width:88%">
+                            <div style="width:100%">
+                                <div class="slideshow-container" style="width:100%">
+                                    <div class="mySlides2 fade">
+                                        <img src="kioskTour-imgs/research/story1.svg" style="width:100%;">
+                                    </div>
+                                    
+                                    <div class="mySlides2 fade" style="display: none;">
+                                        <img src="kioskTour-imgs/research/story2.svg" style="width:100%;">
+                                    </div>
+                                    <div class="mySlides2 fade" style="display: none;">
+                                        <img src="kioskTour-imgs/research/story3.svg" style="width:100%;">
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1,2)">❮</a>
+                                    <a class="next" onclick="plusSlides(1,2)">❯</a>
+                                </div>
+                                <div class="hidden" style="text-align:center">
+                                    <span class="dot dot1" onclick="currentSlide(1,2)"></span> 
+                                    <span class="dot dot1" onclick="currentSlide(2,2)"></span>  
+                                    <span class="dot dot1" onclick="currentSlide(3,2)"></span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Storyboard interviews</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in">We interviewed 5 concert-goers to understand their experience with purchasing concert merch and to test the concept of a merch kiosk though getting their opinions on our storyboards.</p>
+                    <div class="paragraphs">
+                        <h3 class="fade-in">Interview insight summary:</h3>
+                        <ul>
+                            <li class="fade-in">Users want kiosks to <strong>mimic in-person interactions </strong>from feeling the clothing to seeing different sizes</li>
+                            <li class="fade-in">Users are worried <strong>kiosks
+                                won’t give them the
+                                flexibility</strong> to express their concerns when purchasing
+                                merchandise, such as
+                                returning or exchanging
+                                items.</li>
+                            <li class="fade-in">Users are generally
+                                <strong>dissuaded from
+                                buying</strong> merchandise
+                                when there are long
+                                lines.</li>
+                        </ul>
+                    </div>
+                    <a class="button fade-in" href="kioskTour-imgs/research/storyboard-interviews.pdf" target="_blank">
+                        <small style="font-weight: 500;">View interview document</small>
+                    </a>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Mission Statement</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p> We aim to design merchandise kiosks that <strong>streamlines the concert merch purchasing process and provides customers a self-service purchase option</strong> located in various areas at concert venues, allowing more access points for fans to buy merch.</p>
+                        <p> We hope that the kiosks will <strong>address customers’ needs</strong>, such as shortening merchandise checkout lines, extending previously limited operating hours, and providing information to help customers decide their best option. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="footnote">
             <p>© 2025 Kelly La</p>
             <div class="nav-items">
@@ -83,5 +359,109 @@
                 </div>
             </div>
         </div>
+
+                <!-- scripts -->
+         <!--hover play final prototype-->
+         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const videos = document.querySelectorAll(".five-vid video");
+        
+            videos.forEach((video) => {
+                video.addEventListener("mouseenter", () => {
+                video.play().catch(err => console.error("Play failed:", err));
+                });
+        
+                video.addEventListener("mouseleave", () => {
+                video.pause();
+                });
+            });
+            });
+        </script>       
+
+        <!--carousels-->
+        <script>
+            let slideIndices = [1, 1, 1];
+            let slideClassNames = ["mySlides1", "mySlides2", "mySlides3"];
+            let dotClassNames = ["dot1", "dot2", "dot3", "dot4", "dot5"];
+
+            function plusSlides(n, no) {
+            showSlides(slideIndices[no - 1] += n, no);
+            }
+
+            function currentSlide(n, no) {
+            showSlides(slideIndices[no - 1] = n, no);
+            }
+
+            function showSlides(n, no) {
+            let i;
+            let slides = document.getElementsByClassName(slideClassNames[no - 1]);
+            let dots = document.getElementsByClassName(dotClassNames[no - 1]);
+
+            if (n > slides.length) slideIndices[no - 1] = 1;
+            if (n < 1) slideIndices[no - 1] = slides.length;
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndices[no - 1] - 1].style.display = "block";
+            if (dots.length) {
+                dots[slideIndices[no - 1] - 1].className += " active";
+            }
+            }
+
+            // Initialize both carousels
+            showSlides(1, 1);
+            showSlides(1, 2);
+            showSlides(1, 3);
+            showSlides(1, 4);
+            showSlides(1, 5);
+        </script>
+
+        <!--fade-in animation-->
+        <script>
+            const faders = document.querySelectorAll('.fade-in');
+          
+            const appearOptions = {
+              threshold: 0.2
+            };
+          
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // animate only once
+              });
+            }, appearOptions);
+          
+            faders.forEach(fader => {
+              appearOnScroll.observe(fader);
+            });
+        </script>
+
+        <!--scroll to top arrow-->
+        <script>
+            const scrollToTopButton = document.getElementById("scrollBtn");
+
+            window.addEventListener("scroll", () => {
+            if (window.scrollY >= 200) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+            });
+
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+        </script>
     </body>
 </html>
