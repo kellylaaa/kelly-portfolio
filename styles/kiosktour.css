@@ -270,6 +270,10 @@ tr{
     gap: 15px;
 }
 
+.img-descrip{
+    justify-items: center;
+}
+
 .competitor-img{
     width: 200px;
     justify-items: center;
