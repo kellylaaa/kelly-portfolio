@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kelly La</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png">
+
+        <!-- css links -->
+        <link rel="stylesheet" href="/styles/general.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/footnote.css">
+        <link rel="stylesheet" href="/styles/cooklaborate.css">
+
+        <link rel="preload" href="/styles/general.css">
+        <link rel="preload" href="/styles/header.css">
+        <link rel="preload" href="/styles/cooklaborate.css">
+        <link rel="preload" href="/styles/footnote.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header" onclick="window.scrollTo(0, 0);">
+            <a class="link" href="/" style="opacity:1;">
+                    <p>Kelly La</p>
+            </a>
+            <nav class="nav-items">
+                <div class="nav-pages">
+                    <a class="link" href="/#works">
+                        <p>Works</p>
+                    </a>
+                    <a class="link" href="/about/">
+                        <p>About</p>
+                    </a>
+                    <a class="link" href="/KellyLa-Resume(2025).pdf" target="_blank">
+                        <p>Resume</p>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="/icon/mail.svg">
+                    </a>
+
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="/icon/linkedin.svg">
+                    </a>
+                </div>
+
+            </nav>
+
+            <script>
+                let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const header = document.getElementById("header");
+                let lastHidePosition = lastScrollTop;
+                
+                window.addEventListener("scroll", function () {
+                  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+                
+                  if (currentScroll < 50) {
+                    // Always show header at the very top
+                    header.style.top = "0px";
+                  } else if (currentScroll > lastScrollTop) {
+                    // Scrolling down
+                    header.style.top = "-132px";
+                    lastHidePosition = currentScroll;
+                  } else if (lastHidePosition - currentScroll > 100) {
+                    // Scrolled up more than 100px
+                    header.style.top = "0px";
+                  }
+                
+                  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                });
+            </script>
+        </header> 
+
+        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+
+        <div class="landing">
+            <div class="landing-content">
+                <div class="logo-container fade-in">
+                    <img class="logo" src="/cooklaborate-imgs/cooklaborate-logo.png" style="border: none; border-radius:0;">
+                </div>
+                <h2 class="fade-in" style="font-weight:300; text-align: center; width: 50%;">Breaking the monotony of meal prepping with the help from your community</h2>
+                <div class="landing-img-container fade-in">
+                    <img rel="preload" class="landing-img" src="/cooklaborate-imgs/landing-img.png" style="border: none;  border-radius:0;">
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="overview">
+                <div class="details">
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Role</small>
+                        <small>UX Design, UX Research</small>
+                    </div>
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Tool</small>
+                        <small>Google Sheets, Figma</small>
+                    </div>
+                    <div class="role-tool-time fade-in">
+                        <small style="font-weight: 600;">Timeline</small>
+                        <small>January - March 2024</small>
+                    </div>
+                    <a class="button fade-in" href="https://www.figma.com/proto/IUS7cmFCvhlnd40PuNW0Ue/COGS123-Prototype-Mockups?page-id=0%3A1&type=design&node-id=2-2455&viewport=697%2C-77%2C0.12&t=HRNVblrf55hz3JiF-1&scaling=scale-down&starting-point-node-id=2%3A2455">
+                        <small style="font-weight: 500;">View Final Prototype</small>
+                    </a>
+                </div>
+                <div class="section">
+                    <div class="sub-section fade-in">
+                        <div class="paragraphs">
+                            <h3 class="fade-in">People lack variety in their daily meals</h3>
+                            <p>People often don't have time to cook for themselves every day or struggle with finding new and easy recipes to make. As a result, they either resort to ordering takeout, meal prepping in bulk, or cooking the same meals everyday. The first option is costly and also tends to be unhealthy. The second and last option, while it is cheaper and more nutritious, eating the same few meals for several days at a time easily can get repetitive and boring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Conducting surveys to understand our users</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <div class="paragraphs">
+                            <p class="fade-in">We conducted an online survey to understand our user's current cooking habits, with the main goal of learning their cooking habits, how they find ideas for what meals to cook, and their general opinions towards meal prepping.</p>
+                            <p>Our survey included a total of 14 questions, consisting of 4 demographic questions and 10 questions about cooking habits. We recruited a total of 25 participants (8 males, 17 females) by sending our survey to online UCSD channels such as class discord servers and club group chats.</p>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Summary of findings</h3>
+                            <p class="fade-in">From our interviewees, we found that they go to cafes for 1 of these 3 reasons:</p>
+                            <ul>
+                                <li class="fade-in">11 out of 25 participants cook 2-3 times a week at home, 8 participants cook 5-6 times a week at home, 4 participants cook every day at home, 2 people cook once a week at home, and lastly, 1 participant does not cook at home (Figure 1).</li>
+                                <li class="fade-in">13 out of 25 participants do not meal prep. However, 12 participants do meal prep (Figure 2).</li>
+                            </ul>
+                        </div>
+                        <div class="sub-sub-section fade-in">
+                            <div class="categories-hoz">
+                                <div class="categories-ver">
+                                    <img style="width:100%;" src="/cooklaborate-imgs/research/chart1.svg">
+                                    <small class="img-description">Figure 1. How often do you cook at home?</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img style="width:100%;" src="/cooklaborate-imgs/research/chart2.svg">
+                                    <small class="img-description">Figure 2. Do you meal prep?</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Quotes from respondents</h3>
+                            <ul>
+                                <li class="fade-in">"I go online and search for whatever I want to make. I don't really use recipes in detail, I just look at the general ingredients and steps and then go for it."</li>
+                                <li class="fade-in">"I think it [meal prepping] is fast and convenient because it saves a lot of time cooking. However, I personally like to each fresh cook food because it just tastes better than meal prep. Moreover, meal prepping may get repetitive food over the week and have left over if you can finish it on time which eventually be in the trash can. It would be good for people who like it and can finish all the food."</li>
+                                <li>"A pro is that it's healthy and saves money. Some cons are that it's limited to certain meals and gets repetitive."</li>
+                            </ul>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">How we plan to address user pain points</h3>
+                            <ul>
+                                <li class="fade-in"><strong>Difficulty in finding recipes</strong> - Browse diverse recipes with a personalized recommendation system</li>
+                                <li class="fade-in"><strong>Lack of variety in daily meals</strong> - Enjoy a variety of dishes by participating in meal exchanges</li>
+                                <li><strong>Laziness</strong> - No longer have to take as much effort thinking and cooking different meals everyday</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title fade-in">What were the current solutions?</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in">To explore the existing solutions, we analyzed the competitive space to find gaps that we could address.</p>
+                        <div class="sub-sub-section">
+                            <div class="categories-hoz fade-in" style="display:grid;grid-template-columns: 1fr 1fr;">
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/research/allrecipes.png" style="width: 100%;">
+                                    <p><strong>Allrecipes.com</strong> has cooking videos, how-to guides, and articles on food trends, nutrition, and culinary techniques. It features shopping lists, meal planners, and a variety of meal selections <br><br>Users can post recipes, comment and rate others' recipes, participate in forums</p>
+                                </div>
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/research/prm.png" style="width: 100%;">
+                                    <p><strong>Paprika Recipe Manager 3</strong> allows you to download and add your recipes, and create grocery lists. It features meal planners and ingredient tracking.<br><br><br>Users can share grocery lists, which allows users to add to a shared grocery list with live updates.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-section">
+                        <h3>The competition did not address the repetitiveness of meal-prepping...</h3>
+                        <p>While Allrecipes and Paprika Recipe Manager 3 aided users in their meal-prepping process by providing features like grocery lists and easy access to recipes, neither of these addressed the problem that meal prepped meals get repetitive overtime.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title fade-in">Our novel idea</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <h3 class="fade-in">Reducing repetition by facilitating meal swaps!</h3>
+                        <p class="fade-in">After conducting research through surveys and competitive analysis, we found that the problem of repetitiveness was brought up by all survey respondents who meal-prepped, yet it has not been addressed by existing solutions on the market today.<br><br>Therefore, we plan to incorporate an interactive activity within the community or close friends by enabling not only the sharing of recipes, but also the exchanging of meal preps to address the full scope of our problem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title fade-in">Prototyping Round 1</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <div class="paragraphs">
+                            <p class="fade-in">In our first round of prototyping, we wanted to implement a "playable prototype" for our user testing session with the following features:</p>
+                            <ul>
+                                <li class="fade-in">Uploading your own dishes and recipes</li>
+                                <li class="fade-in">Match for meal exchanges with those who are also interested in trying your meal</li>
+                                <li class="fade-in">Rating system for you to give and receive ratings from others based on presentation, taste, and user interactions</li>
+                                <li class="fade-in">Enable comments and feedback for users to improve their recipes</li>
+                                <li class="fade-in">An option to receive the dish's recipe from people you've exchanged with</li>
+                            </ul>
+                        </div>
+                        <p class="fade-in">To create this functionality, we used scripting within Google Sheets to enable automatic meal matching and rating calculations.</p>
+                        <div class="sub-sub-section">
+                            <div class="categories-hoz fade-in" style="display:grid;grid-template-columns: 1fr 1fr;">
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/prototype-r1/p1a.png" style="width: 100%;">
+                                    <small style="text-align: center;">Users can upload an image of their dish, the recipe, and reheat instructions.</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/prototype-r1/p1b.png" style="width: 100%;">
+                                    <small style="text-align: center;">Users decide if they would like to exchange meals on the left; matches automatically appear on the right.</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/prototype-r1/p1c.png" style="width: 100%;">
+                                    <small style="text-align: center;">Leave comments after the exchange (left), and view the feedback you received (right).</small>
+                                </div>
+                                <div class="categories-ver">
+                                    <img src="/cooklaborate-imgs/prototype-r1/p1d.png" style="width: 100%;">
+                                    <small style="text-align: center;">Give all users you've exchanged with ratings so users can build credibility over time.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button fade-in" href="https://docs.google.com/spreadsheets/d/1XLyZmai0TXLxzh_cGVuFnbD7AlgSE_M9nVGinu30qWQ/edit?usp=sharing" target="_blank"> 
+                            <small style="font-weight: 500;">View Round 1 Prototype</small>
+                        </a>
+                    </div>
+                    <div class="sub-section">
+                        <h3 class="fade-in">Feedback and Key Takeaways</h3>
+                        <div class="paragraphs">
+                            <p class="fade-in">After conducting our first prototyping session, we sent out a quick feedback survey with our live audience to understand any issues with our initial prototype.</p>
+                            <ol>
+                                <li class="fade-in">Lack of nutrition information</li>
+                                    <ul>
+                                        <li class="fade-in">"I think have a step for the ingredients too and having users be able to see the ingredients before meeting up to account for allergies"</li>
+                                        <li class="fade-in">
+                                            "I think something that I would like to see is making sure that the idea takes into account that people have dietary restrictions or preferences for food. It would be really helpful especially if you have a severe allergy."
+                                        </li>
+                                    </ul>
+                                <li class="fade-in">Recipe sharing</li>
+                                <ul>
+                                        <li class="fade-in">"There are no regulations on how detailed the recipes should be. If they make the recipe too simplified, then it's difficult to recreate the dish based on their oversimplified recipe."</li>
+                                        <li class="fade-in"> "You might want a recipe but because you don't match you don't get it and that can suck"</li>
+                                    </ul>
+                                <li class="fade-in">General prototype flaws</li>
+                                <ul>
+                                        <li class="fade-in">"Once I got the hang of the prototype, it made sense but it was difficult understanding the instructions at first or the structure of the prototype."</li>
+                                        <li class="fade-in">"The exchanged recipe didn't show up when I selected I would like to recreate. I'm not sure if thats a bug."</li>
+                                    </ul>
+                            </ol>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Considerations for round 2</h3>
+                            <ul>
+                                <li class="fade-in">Make sure the prototype accounts for nutrition information and dietary restrictions</li>
+                                <li class="fade-in">Refine the recipe sharing process to address user concerns</li>
+                                <li class="fade-in">Reconsider the current user flow to make it less confusing</li>
+                                <li class="fade-in">Make the prototype look better overall</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="section">
+                <h2 class="section-title fade-in">Improving prototype based on user feedback</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in">
+                            In our second round of prototyping, we improved the overall look of the prototype, as well as implemented a few changes based on the feedback we received last round.</p>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Iterations</h3>
+                            <ul style="gap:50px; list-style-position: inside; padding:0;">
+                                <div class="categories-ver">
+                                    <li class="fade-in">Input dietary restrictions of the meal they created, which will show up to other users when their recipe appears on the matching screen</li>
+                                    <div class="mood-style fade-in">
+                                        <img class="iteration-img"  src="/cooklaborate-imgs/prototype-r2/p2a.png">
+                                        <small class="img-description">Dietary restrictions feature</small>
+                                    </div>
+                                </div>
+                                <div class="categories-ver">
+                                    <li class="fade-in">See all recipes that they're interested in, even if the other users don't want to match with them. Users can now see all recipes they're interested in, regardless of their matching status</li>
+                                    <div>
+                                        <img class="iteration-img fade-in" src="/cooklaborate-imgs/prototype-r2/p2b.png">
+                                        <small class="img-description">Receipe book page</small>
+                                    </div>
+                                </div>
+                                <div class="categories-ver">
+                                    <li class="fade-in">View their feedback directly on the user profile page + an updated user rating section. Comments now appear in the user's profile page, rather than at the end of the prototype.</li>
+                                    <div class="categories-hoz fade-in">
+                                        <div>
+                                            <img class="iteration-img" src="/cooklaborate-imgs/prototype-r2/p2c.png">
+                                            <small class="img-description">Feedback and ratings on profile page</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <a class="button fade-in" href="https://docs.google.com/spreadsheets/d/1_vAsd3ETcIAonYFlkAy-ffgSTgydtfDFV8bRXfulDlw/edit?usp=sharing" target="_blank"> 
+                            <small style="font-weight: 500;">View Round 2 Prototype</small>
+                        </a>
+                    </div>
+                    <div class="sub-section">
+                        <h3 class="fade-in">Feedback and Key Takeaways</h3>
+                        <div class="paragraphs">
+                            <p class="fade-in">After this round of prototyping, we sent out another quick feedback survey to the session participants. Our team noticed that this time around, the participants were able to finish the matching process a lot quicker. Overall, the feedback was positive and they enjoyed all the changes that we've made to the prototype. Given the time constraints, we concluded our prototyping and user testing phase and moved on to create a final prototype for our app!</p>
+                        </div>
+                        <div class="paragraphs">
+                            <h3 class="fade-in">Considerations for final prototype</h3>
+                            <ul>
+                                <li class="fade-in">More security features - Stricter onboarding and verification</li>
+                                <li class="fade-in">Have reviews public on user profile - See reviews that other users left</li>
+                                <li class="fade-in">Food Handler Certification - Ensure knowledge of proper food handling training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title fade-in">Final Product</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in">Here are the high fidelity screens we designed on Figma. These screens are representative of the functional Google Sheets prototype.</p>
+                        <div class="five-vid fade-in">
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/1.png" preload="metadata">
+                                <small class="img-description">Onboarding screen 1 to preview experience</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/2.png" preload="metadata">
+                                <small class="img-description">Onboarding screen 2 to preview experience</small>
+                            </div>
+                            <div>
+                               <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/3.png" preload="metadata">
+                                <small class="img-description">Onboarding screen 3 to preview experience</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/4.png" preload="metadata">
+                                <small class="img-description">New user profile needs to be verified before swapping</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/5.png" preload="metadata">
+                                <small class="img-description">Verify number, ID, and upload certification</small>
+                            </div>
+                        
+                        </div>
+                        <div class="five-vid">
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/6.png" preload="metadata">
+                                <small class="img-description">See recipes even without matching with users</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/7.png" preload="metadata">
+                                <small class="img-description">Choose meals you are interested in eating</small>
+                            </div>
+                            <div>
+                               <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/8.png" preload="metadata">
+                                <small class="img-description">A list of all your matched recipes for swapping</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/9.png" preload="metadata">
+                                <small class="img-description">Rate your experience after the exchange</small>
+                            </div>
+                            <div>
+                                <img width="100%" style="border: none;" src="/cooklaborate-imgs/final/10.png" preload="metadata">
+                                <small class="img-description">Profile page where user see ratings and edit meal</small>
+                            </div>
+                        </div>
+                        <a class="button fade-in" href="https://www.figma.com/proto/IUS7cmFCvhlnd40PuNW0Ue/COGS123-Prototype-Mockups?page-id=0%3A1&type=design&node-id=2-2455&viewport=697%2C-77%2C0.12&t=HRNVblrf55hz3JiF-1&scaling=scale-down&starting-point-node-id=2%3A2455&mode=design">View hi-fi product</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title fade-in">Social structures and complexities</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <p class="fade-in">After concluding our design process, my group and I took some time to discuss the potential limitations of our project idea.</p>
+                        <div class="paragraphs">
+                             <h3 class="fade-in">Difficulty establishing user trust</h3>
+                             <p class="fade-in">First, there's the problem of user trust because it may be difficult to trust that the meals they are receiving from the meal swaps were prepared under hygienic conditions and are safe to consume. We attempted to address this issue by adding user verification, where they need to verify their phone number, identity, and complete a food handling certification to become a member of the meal swapping community.</p>
+                        </div>
+                        <div class="paragraphs">
+                             <h3 class="fade-in">The possibility of exclusive groups</h3>
+                             <p class="fade-in">Next, our platform encourages community building by facilitating locally organized meal swap events. However, there is a possibility of forming exclusive groups, which may cause social division if certain individuals are consistently excluded from meal exchanges.</p>
+                        </div>
+                        <div class="paragraphs">
+                             <h3 class="fade-in">Diversity & inclusion inadequately addressed</h3>
+                             <p class="fade-in">Challenges revolving dietary restrictions, allergies, and cultural sensitivities may arise due to not being properly addressed by other users. To address this, we provided options for users to include dietary restrictions for their posted meals to notify users before they pick a dish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title fade-in">Takeaways</h2>
+                <div class="section-content">
+                    <div class="sub-section">
+                        <div class="paragraphs">
+                            <p class="fade-in">Throughout the entire design process, I took away many new insights about design and collaboration, such as:</p>
+                            <ul>
+                                <li class="fade-in">How to conduct user research to investigate ideas and determine pain points.</li>
+                                <li class="fade-in">It is useful to piggyback on other apps to test out our ideas</li>
+                                <li class="fade-in">Prototype sessions and feedback from our target audience offer practical advice on how to enhance the user experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <!-- scripts -->
+         <!--hover play final prototype-->
+         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const videos = document.querySelectorAll(".five-vid video");
+        
+            videos.forEach((video) => {
+                video.addEventListener("mouseenter", () => {
+                video.play().catch(err => console.error("Play failed:", err));
+                });
+        
+                video.addEventListener("mouseleave", () => {
+                video.pause();
+                });
+            });
+            });
+        </script>       
+
+        <!--carousels-->
+        <script>
+            let slideIndices = [1, 1, 1];
+            let slideClassNames = ["mySlides1", "mySlides2", "mySlides3"];
+            let dotClassNames = ["dot1", "dot2", "dot3", "dot4", "dot5"];
+
+            function plusSlides(n, no) {
+            showSlides(slideIndices[no - 1] += n, no);
+            }
+
+            function currentSlide(n, no) {
+            showSlides(slideIndices[no - 1] = n, no);
+            }
+
+            function showSlides(n, no) {
+            let i;
+            let slides = document.getElementsByClassName(slideClassNames[no - 1]);
+            let dots = document.getElementsByClassName(dotClassNames[no - 1]);
+
+            if (n > slides.length) slideIndices[no - 1] = 1;
+            if (n < 1) slideIndices[no - 1] = slides.length;
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndices[no - 1] - 1].style.display = "block";
+            if (dots.length) {
+                dots[slideIndices[no - 1] - 1].className += " active";
+            }
+            }
+
+            // Initialize both carousels
+            showSlides(1, 1);
+            showSlides(1, 2);
+            showSlides(1, 3);
+            showSlides(1, 4);
+            showSlides(1, 5);
+        </script>
+
+        <!--fade-in animation-->
+        <script>
+            const faders = document.querySelectorAll('.fade-in');
+          
+            const appearOptions = {
+              threshold: 0.2
+            };
+          
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // animate only once
+              });
+            }, appearOptions);
+          
+            faders.forEach(fader => {
+              appearOnScroll.observe(fader);
+            });
+        </script>
+
+        <!--scroll to top arrow-->
+        <script>
+            const scrollToTopButton = document.getElementById("scrollBtn");
+
+            window.addEventListener("scroll", () => {
+            if (window.scrollY >= 200) {
+                scrollToTopButton.classList.add("show");
+            } else {
+                scrollToTopButton.classList.remove("show");
+            }
+            });
+
+            function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            }
+
+        </script>
+
+        <div class="footnote fade-in">
+            <p>© 2025 Kelly La</p>
+            <div class="nav-items">
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="/icon/mail.svg">
+                    </a>
+    
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="/icon/linkedin.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
