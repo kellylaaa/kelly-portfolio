@@ -78,7 +78,7 @@
     display: flex;
     align-items: flex-start;
     gap: 80px;
-    padding: 0px 20%;
+    padding:0 20%;
 }
 
 .details{
@@ -317,3 +317,23 @@ img{
     display: block;
     height: 350px;
 }
+
+.content-with-nav{
+    display: flex;
+    gap: 150px;
+}
+
+.side-bar{
+    position: sticky;
+    top: 0px;
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.mini-nav-tab{
+    display: flex;
+    gap: 20px;
+}
+

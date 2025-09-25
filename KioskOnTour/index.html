@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kelly La</title>
+        <title>Kiosk on Tour</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png">
 
         <!-- css links -->
@@ -23,9 +23,30 @@
     </head>
     <body>
         <header id="header" onclick="window.scrollTo(0, 0);">
-            <a class="link" href="/" style="opacity:1;">
-                    <p>Kelly La</p>
+            <a class="name" href="/">
+                <p class="nav-font">Kelly La</p>
             </a>
+            <div class="nav-pages">
+                    <a class="nav-link" href="/#works">
+                        <p class="nav-font">Works</p>
+                    </a>
+                    <a class="nav-link" href="/about/">
+                        <p class="nav-font">About</p>
+                    </a>
+                    <a class="nav-link" href="/KellyLa-Resume(2025).pdf" target="_blank">
+                        <p class="nav-font">Resume</p>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="/icon/mail.svg">
+                    </a>
+
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="/icon/linkedin.svg">
+                    </a>
+                </div>
+            <!--
             <nav class="nav-items">
                 <div class="nav-pages">
                     <a class="link" href="/#works">
@@ -47,32 +68,8 @@
                         <img class="icon-container" src="/icon/linkedin.svg">
                     </a>
                 </div>
-
+-->
             </nav>
-
-            <script>
-                let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                const header = document.getElementById("header");
-                let lastHidePosition = lastScrollTop;
-                
-                window.addEventListener("scroll", function () {
-                  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-                
-                  if (currentScroll < 50) {
-                    // Always show header at the very top
-                    header.style.top = "0px";
-                  } else if (currentScroll > lastScrollTop) {
-                    // Scrolling down
-                    header.style.top = "-132px";
-                    lastHidePosition = currentScroll;
-                  } else if (lastHidePosition - currentScroll > 100) {
-                    // Scrolled up more than 100px
-                    header.style.top = "0px";
-                  }
-                
-                  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-                });
-                </script> 
         </header> 
 
         <div class="landing">
@@ -580,13 +577,20 @@
         
 
         <div class="footnote">
-            <p>© 2025 Kelly La</p>
-            <div class="nav-items">
-                <div class="nav-icons">
+            <div>
+                <div class="fade-in" style="display: flex; align-items: center; gap:5px;">
+                    <h3 class="project-title ">Thank you for visting!</h3>
+                    <div class="footer-stars">
+                        <img width=100% height=100% src="homepage-imgs/landing-stars.png">
+                    </div>
+                </div>
+                <p class="nav-font fade-in">Made with coffee and an endless playlist. © 2025 Kelly La</p>
+            </div>
+            <div class="nav-items-foot">
+                <div class="nav-icons fade-in">
                     <a class="icon" href="mailto:kellyla99@gmail.com">
                         <img class="icon-container" src="/icon/mail.svg">
                     </a>
-    
                     <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
                         <img class="icon-container" src="/icon/linkedin.svg">
                     </a>
@@ -595,6 +599,31 @@
         </div>
 
                 <!-- scripts -->
+
+                <script>
+            let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const header = document.getElementById("header");
+            let lastHidePosition = lastScrollTop;
+            
+            window.addEventListener("scroll", function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll < 50) {
+                // Always show header at the very top
+                header.style.top = "0px";
+            } else if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                header.style.top = "-120px";
+                lastHidePosition = currentScroll;
+            } else if (lastHidePosition - currentScroll > 50) {
+                // Scrolled up more than 100px
+                header.style.top = "0px";
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+            });
+        </script> 
+
          <!--hover play final prototype-->
          <script>
             document.addEventListener("DOMContentLoaded", () => {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kelly La</title>
+        <title>Kelly La – UX Designer</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png">
 
         <!-- css links -->
@@ -23,9 +23,30 @@
     </head>
     <body style="gap:0;">
         <header id="header" onclick="window.scrollTo(0, 0);">
-            <a class="link" href="/" style="opacity:1;">
-                <p>Kelly La</p>
+            <a class="name" href="">
+                <p class="nav-font">Kelly La</p>
             </a>
+            <div class="nav-pages">
+                    <a class="nav-link" href="/#works">
+                        <p class="nav-font">Works</p>
+                    </a>
+                    <a class="nav-link" href="/about/">
+                        <p class="nav-font">About</p>
+                    </a>
+                    <a class="nav-link" href="/KellyLa-Resume(2025).pdf" target="_blank">
+                        <p class="nav-font">Resume</p>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a class="icon" href="mailto:kellyla99@gmail.com">
+                        <img class="icon-container" src="/icon/mail.svg">
+                    </a>
+
+                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                        <img class="icon-container" src="/icon/linkedin.svg">
+                    </a>
+                </div>
+            <!--
             <nav class="nav-items">
                 <div class="nav-pages">
                     <a class="link" href="/#works">
@@ -47,12 +68,14 @@
                         <img class="icon-container" src="/icon/linkedin.svg">
                     </a>
                 </div>
-
+-->
             </nav>
         </header> 
 
         <div id="scrollBtn" onclick="scrollToTop()">↑</div>
+        <div style="display: flex; flex-direction: column; gap:-20px;">
 
+        
         <div class="landing">
             <img class="landing-star" src="homepage-imgs/landing-stars.png">
             <div class="landing-content">
@@ -64,113 +87,139 @@
                     <h2 class="intro-description fade-in" style="font-weight: 300;">with a passion for creating useful and engaging experiences.</h2>
                 </div>
             </div>
-            <div class="view-works">
-                <a href="#works">
-                    <img class="view-works-icon" src="homepage-imgs/view-works-circle.svg">
-                </a>
-            </div>
+            <!--
+            <a href="#works">
+                <div class="view-works">
+                    <p style="text-align: center;">view works</p> 
+                    <img width="10px;" src="icon/down-arrow2.svg">
+                </div>
+                <img class="view-works-icon" src="homepage-imgs/view-works-circle.svg">
+                
+            </a>
+            -->
         </div>
 
+        <!--
+        <div class="featured-works">
+            <p>Featured works</p>
+            <small>(2024-2025)</small>
+        </div>
+        -->
+
+        <div class="custom-cursor">
+            <img src="/icon/arrow-up-right.png" alt="cursor arrow">
+        </div>
 
         <div class="all-projects" id="works">
-            <!-- Seven Seas Roasting -->
-            <a class="project-box" href="/SevenSeas/"
-                style="padding: 140px 200px;">
-                <div class="project">
-                    <div class="wireframe-container fade-in">
-                        <img class="wireframe-img" rel="preload" src="homepage-imgs/seven-seas.png">
-                    </div> 
-                    <div class="all-projects-text" >
+            <img class="landing-star2" src="homepage-imgs/star.png">
+            <img class="landing-star3" src="homepage-imgs/star.png">
+            <a class="link" href="/SevenSeas/">
+                <div class="project-box fade-in">
+                    <div class="wireframe-container" style="background-color: #8B5E3C;">
+                        <img class="wireframe-img" src="homepage-imgs/seven-seas.png">
+                    </div>
+                    <div class="bottom"> 
+                        <div class="title">
+                            <h3>Seven Seas Roasting Co.</h3>
+                            <div class="tab">Client Work</div>
+                        </div>
                         <div class="project-text">
-                            <div class="project-title">
-                                <h1 class="project-name fade-in">Seven Seas Roasting Co.</h1>
-                                <p class="feature-text fade-in">Website Redesign</p>
-                            </div>
-                            <p class="fade-in">Working with the owner of Seven Seas Roasting Co. to redesign their website aimed to draw in customers and highlighting provided services</p>
-                            <div class="project-extra">
-                                <small> Role: UX Designer, UX Reacher, Visual Design</small>
-                                <small> Tool: Figma</small>
-                                <small> Timeline: January - March 2025</small>
-                            </div>
+                            <small style="line-height: 25px;">Website redesign to exhance customer's experience</small>
+                            <!--
+                            <img class="icon" src="icon/arrow-right-circle.svg">
+                            -->
                         </div>
-                        <!--
-                        <div class="read-case-study" style="background-color: #2f3f7a; color:white;">
-                            <p style="font-weight: 500;"> Read Case Study </p>
-                        </div>
-                        -->
                     </div>
                 </div>
             </a>
-            
-            <!-- kiosk on tour -->
-            <a class="project-box" href="/KioskOnTour/"
-                style="background-color: #d4e0ff;">
-                <div class="project">
-                    <div class="wireframe-container-dark fade-in">
-                        <img class="wireframe-img" rel="preload" src="homepage-imgs/kiosk-on-tour.png">
-                    </div> 
-                    <div class="all-projects-text">
+            <a class="link" href="/KioskOnTour/">
+                <div class="project-box fade-in">
+                    <div class="wireframe-container" style="background-color: #c1bce5;">
+                        <img width=100% src="homepage-imgs/kiosk-on-tour.png">
+                    </div>
+                    <div class="bottom"> 
+                        <div class="title">
+                            <h3>Kiosks on Tour</h3>
+                            <div class="tab">Physical UX</div>
+                        </div>
                         <div class="project-text">
-                            <div class="project-title fade-in">
-                                <h1 class="project-name">Kiosk on Tour</h1>
-                                <p class="feature-text fade-in">
-                                Physical interactive kiosk</p>
-                            </div>
-                            <p class="fade-in">Physical merchandise kiosks that streamlines the concert merch purchasing process and provides customers a self-service purchase option.</p>
-                            <div class="project-extra fade-in">
-                                <small> Role: UX Designer, UX Reacher, Visual Design</small>
-                                <small> Tool: Figma, Inkscape</small>
-                                <small> Timeline: September - December 2024</small>
-                            </div>
+                            <small style="line-height: 25px;">Improving the purchasing process for concert merchandise</small>
+                            <!--
+                            <img class="icon" src="icon/arrow-right-circle.svg">
+                            -->
                         </div>
-                        <!--
-                        <div class="read-case-study" style="color: #2f3f7a;">
-                            <p style="font-weight: 500;"> Read Case Study </p>
-                        </div>
-                        -->
                     </div>
                 </div>
             </a>
-            
-            <!-- cooklaborate -->
-             <a class="project-box" href="/cooklaborate/">
-                <div class="project">
-                    <div class="wireframe-container fade-in">
-                        <img class="wireframe-img" src="homepage-imgs/cooklaborate.png">
-                    </div> 
-                    <div class="all-projects-text" >
+            <a class="link" href="/cooklaborate/">
+                <div class="project-box fade-in">
+                    <div class="wireframe-container" style="background-color: #419A54;">
+                        <img width=100% src="homepage-imgs/cooklaborate.png">
+                    </div>
+                    <div class="bottom"> 
+                        <div class="title">
+                            <h3>Cooklaborate</h3>
+                            <div class="tab">0 to 1</div>
+                        </div>
                         <div class="project-text">
-                            <div class="project-title">
-                                <h1 class="project-name fade-in">Cooklaborate</h1>
-                                <p class="feature-text fade-in">Meal Swapping App</p>
-                            </div>
-                            <p class="fade-in"> A platform to organize events for people in their community to exchange meals that they have prepped in advance. </p>
-                            <div class="project-extra fade-in">
-                                <small> Role: UX Designer, UX Reacher, Visual Design</small>
-                                <small> Tool: Figma</small>
-                                <small> Timeline: January - March 2024</small>
-                            </div>
+                            <small style="line-height: 25px;">Breaking the monotony of meal prepping with the help from your community</small>
+                            <!--
+                            <img class="icon" src="icon/arrow-right-circle.svg">
+                            -->
                         </div>
                     </div>
                 </div>
-             </a>
-            
+            </a>
+        </div>
         </div>
 
         <div class="footnote">
-            <p>© 2025 Kelly La</p>
-            <div class="nav-items">
-                <div class="nav-icons">
+            <div>
+                <div class="fade-in" style="display: flex; align-items: center; gap:5px;">
+                    <h3 class="project-title ">Thank you for visting!</h3>
+                    <div class="footer-stars">
+                        <img width=100% height=100% src="homepage-imgs/landing-stars.png">
+                    </div>
+                </div>
+                <p class="nav-font fade-in">Made with coffee and an endless playlist. © 2025 Kelly La</p>
+            </div>
+            <div class="nav-items-foot">
+                <div class="nav-icons fade-in">
                     <a class="icon" href="mailto:kellyla99@gmail.com">
-                        <img class="icon-container" src="icon/mail.svg">
+                        <img class="icon-container" src="/icon/mail.svg">
                     </a>
-    
                     <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
-                        <img class="icon-container" src="icon/linkedin.svg">
+                        <img class="icon-container" src="/icon/linkedin.svg">
                     </a>
                 </div>
             </div>
         </div>
+
+        <!--cursor-->
+        <script>
+        const cursor = document.querySelector(".custom-cursor");
+        const projectBoxes = document.querySelectorAll(".project-box");
+        
+
+        projectBoxes.forEach(box => {
+            box.addEventListener("mouseenter", () => {
+            cursor.style.display = "flex";
+            box.style.cursor = "none"; // hide default arrow inside box
+            });
+
+            box.addEventListener("mouseleave", () => {
+            cursor.style.display = "none";
+            box.style.cursor = "default"; // restore arrow
+            });
+        });
+
+        // Move cursor with mouse
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.top = `${e.clientY}px`;
+            cursor.style.left = `${e.clientX}px`;
+        });
+        </script>
+
 
         <!--fade-in animation-->
         <script>
@@ -227,9 +276,9 @@
                 header.style.top = "0px";
             } else if (currentScroll > lastScrollTop) {
                 // Scrolling down
-                header.style.top = "-132px";
+                header.style.top = "-120px";
                 lastHidePosition = currentScroll;
-            } else if (lastHidePosition - currentScroll > 100) {
+            } else if (lastHidePosition - currentScroll > 50) {
                 // Scrolled up more than 100px
                 header.style.top = "0px";
             }
