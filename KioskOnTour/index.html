@@ -75,7 +75,7 @@
         <div class="landing">
             <div class="landing-content">
                 <div class="logo-container fade-in">
-                    <img class="logo" src="/kioskTour-imgs/koisk-logo.svg" style="border: none; border-radius:0;">
+                    <img class="logo" src="/kioskTour-imgs/koisk-logo.svg" style="border: none; border-radius:0;" rel="preload">
                 </div>
                 <h2 class="fade-in" style="font-weight:300; text-align: center; width: 50%;">Speeding up the purchasing process for concert merchandise through self-service kiosks</h2>
                 <div class="landing-img-container fade-in">
@@ -354,7 +354,7 @@
                             <p class="fade-in">To begin, we sketched a paper prototype to the show digital interaction elements of our kiosk. Hover to play video.</p>
                             <div class="sub-sub-section fade-in">
                                 <div class="img-descrip">
-                                    <video width="100%" src="/kioskTour-imgs/ideation/paper demo.mp4" muted loop preload="metadata"></video>
+                                    <video id="paper-demo" width="100%" src="/kioskTour-imgs/ideation/paper demo.mp4" muted loop autoplay preload="metadata"></video>
                                     <small class="img-description">Paper prototype</small>
                                 </div>
                             </div>
@@ -535,8 +535,8 @@
                                 <div class="sub-sub-section" style="padding: 0 10%;">
                                     <video style= "border-radius: 7%; width: 100%; border:none;" src="/kioskTour-imgs/final-vid.mp4" muted loop preload="metadata"></video>
                                 </div>
-                                <a class="button fade-in" href="https://www.figma.com/design/rRPSES03n33MdcsN8CSTnl/A4-Merchandise-Kiosk?node-id=74-2608&t=Lj4w8AZjdEKF3XzM-1">View final prototype</a>
-                            </div>
+                                <a class="button fade-in" href="https://www.figma.com/proto/rRPSES03n33MdcsN8CSTnl/A4-Merchandise-Kiosk?node-id=74-2608&t=yiwJlp4wmn7WAZhr-1&scaling=scale-down&content-scaling=fixed&page-id=16%3A2221&starting-point-node-id=45%3A279">View final prototype</a>
+                            </div> 
                             <div class="paragraphs" style="align-items: center;">
                                 <p class="fade-in">Kiosk demo</p>
                                 <div class="sub-sub-section" style="padding: 0 19%;">
@@ -579,9 +579,9 @@
         <div class="footnote">
             <div>
                 <div class="fade-in" style="display: flex; align-items: center; gap:5px;">
-                    <h3 class="project-title ">Thank you for visting!</h3>
+                    <h3 class="project-title ">Thank you for visiting!</h3>
                     <div class="footer-stars">
-                        <img width=100% height=100% src="homepage-imgs/landing-stars.png">
+                        <img width=100% height=100% style="border: none;" src="/homepage-imgs/landing-stars.png">
                     </div>
                 </div>
                 <p class="nav-font fade-in">Made with coffee and an endless playlist. © 2025 Kelly La</p>
@@ -627,7 +627,7 @@
          <!--hover play final prototype-->
          <script>
             document.addEventListener("DOMContentLoaded", () => {
-            const videos = document.querySelectorAll(".sub-sub-section video");
+            const videos = document.querySelectorAll('.sub-sub-section video:not(#paper-demo)');
         
             videos.forEach((video) => {
                 video.addEventListener("mouseenter", () => {
@@ -639,7 +639,26 @@
                 });
             });
             });
-        </script>       
+        </script>     
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("paper-demo");
+
+            if (video) {
+                // Ensure autoplay starts smoothly
+                video.play().catch(err => console.warn("Autoplay blocked:", err));
+
+                video.addEventListener("mouseenter", () => {
+                video.setAttribute("controls", "true");
+                });
+
+                video.addEventListener("mouseleave", () => {
+                video.removeAttribute("controls");
+                });
+            }
+            });
+        </script>
 
         <!--carousels-->
         <script>
