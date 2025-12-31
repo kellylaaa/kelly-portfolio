@@ -67,26 +67,31 @@
 
 .content{
     display: flex;
-    padding: 0px 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    flex: 1;
+    min-width: 0;
+    padding-left: 50px;
 }
 
 .overview{
     display: flex;
     align-items: flex-start;
-    gap: 80px;
-    padding:0 20%;
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
 }
 
 .details{
     display: flex;
-    width: 250px;
-    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
@@ -122,7 +127,7 @@
     display: flex;
     gap: 70px;
     flex-direction: column;
-    padding: 0 20%;
+    padding: 0;
 }
 
 .sub-section{
@@ -165,8 +170,7 @@ ul{
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
+
     align-self: stretch;
     margin-top: 50px;
     border-bottom: 1px solid #000000;
@@ -320,20 +324,51 @@ img{
 
 .content-with-nav{
     display: flex;
-    gap: 150px;
+    gap: 50px;
+    padding-right: 180px;
+    padding-left: 160px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .side-bar{
     position: sticky;
-    top: 0px;
-    padding-left: 30px;
     display:flex;
     flex-direction: column;
     height: fit-content;
+    gap: 20px;
+    min-width:200px;
+    align-self: flex-start;
+    padding-left: 0;
 }
 
 .mini-nav-tab{
     display: flex;
     gap: 20px;
+    cursor: pointer;
+    padding: 0px 20px;
+
+    transition: all 0.3s ease;
+    color: #333;
+    opacity: 60%;
+}
+
+.mini-nav-tab:hover{
+    color:#8B5E3C;
+    opacity: 100%;
+
+}
+
+.mini-nav-tab.active{
+    color:#8B5E3C;
+    font-weight: 500;
+    opacity: 100%;
+
+}
+
+.mini-nav-tab p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
 }
 

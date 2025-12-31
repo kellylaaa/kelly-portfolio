@@ -88,41 +88,60 @@
             </div>
         </div>
 
-
         <div class="content-with-nav">
             <div class="side-bar">
-                <div class="mini-nav-tab">
-                    <p>Overview</p>
+                <div class="mini-nav-tab" onclick="scrollToSection('overview')">
+                    Overview
                 </div>
-                <div class="mini-nav-tab">
-                    <p>Research</p>
+                <div class="mini-nav-tab" onclick="scrollToSection('research')">
+                    Research
                 </div>
-                <div class="mini-nav-tab">
-                    <p>Research</p>
+                <div class="mini-nav-tab" onclick="scrollToSection('branding')">
+                    Branding
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('wireframing')">
+                    Wireframing
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('site-architecture')">
+                    Site Architecture
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('prototyping')">
+                    Prototyping
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('usability-testing')">
+                    Usability Testing
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('final-product')">
+                    Final Product
+                </div>
+                <div class="mini-nav-tab" onclick="scrollToSection('project-reflection')">
+                    Project Reflection
                 </div>
             </div>
         <div class="content">
-            <div class="overview">
+            <div class="overview" id="overview">
                 <div class="details">
                     <div class="role-tool-time fade-in">
-                        <small style="font-weight: 600;">Role</small>
+                        <small style="font-weight: 600; font-style: italic;">Role</small>
                         <small>UX Design, UX Research, <br> Visual Design</small>
                     </div>
                     <div class="role-tool-time fade-in">
-                        <small style="font-weight: 600;">Tool</small>
+                        <small style="font-weight: 600; font-style: italic;">Tool</small>
                         <small>Figma</small>
                     </div>
                     <div class="role-tool-time fade-in">
-                        <small style="font-weight: 600;">Timeline</small>
+                        <small style="font-weight: 600; font-style: italic;">Timeline</small>
                         <small>January - March 2025</small>
                     </div>
+                    <!--
                     <a class="button fade-in" href="https://www.figma.com/proto/rALpb3Rg0NHnEBxupgy7ib/cogs187b?node-id=656-4410&t=yjbcEFj3cttfuKDg-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=656%3A4410">
                         <small style="font-weight: 500;">View Final Prototype</small>
                     </a>
+                    -->
                 </div>
                 <div class="section">
                     <div class="sub-section fade-in">
-                        <p>Seven Seas Roasting Co. is a coffee roastery established in 2017 with various cafes around southern california. Over a 10-week long period, we worked with the founder, Eric something, to redesign Seven Seas Roasting’s website with the goal of drawing in customers and highlighting their provided services. </p>
+                        <p>Seven Seas Roasting Co. is a coffee roastery established in 2017 with various cafes around Southern California. Over a 10-week long period, we worked with the founder, Eric, to redesign Seven Seas Roasting’s website with the goal of drawing in customers and highlighting their provided services. </p>
                     </div>
                     <div class="sub-section fade-in">
                         <h3 class="fade-in">Our Goals</h3>
@@ -146,7 +165,7 @@
             <div>
 
             </div>
-            <div class="section">
+            <div class="section" id="research">
                 <h2 class="section-title fade-in">Research</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -401,7 +420,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="branding">
                 <h2 class="section-title fade-in">Branding</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -455,7 +474,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="wireframing">
                 <h2 class="section-title fade-in">Wireframing</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -470,7 +489,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="site-architecture">
                 <h2 class="section-title fade-in">Site architecture</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -510,7 +529,7 @@
                 </div>
             </div>  
 
-            <div class="section">
+            <div class="section" id="prototyping">
                 <h2 class="section-title fade-in">Prototyping</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -621,7 +640,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="usability-testing">
                 <h2 class="section-title fade-in">Usability testing</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -694,9 +713,9 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="final-product">
                 <h2 class="section-title fade-in">Final Product</h2>
-                <div class="section-content" style="padding:0 200px;">
+                <div class="section-content" >
                     <div class="sub-section" style="align-items: center;">
                         <p class="fade-in">Hover over each page to view our final product!</p>
                         <div class="five-vid fade-in">
@@ -726,7 +745,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="project-reflection">
                 <h2 class="section-title fade-in">Project Reflection</h2>
                 <div class="section-content">
                     <div class="sub-section">
@@ -774,23 +793,25 @@
         <!-- scripts -->
 
         <script>
-            const sidebar = document.querySelector(".sidebar");
-
-            if (currentScroll > lastScrollTop) {
-                // hide header
-                header.style.top = "-120px";
-                sidebar.style.top = "0px";  // move sidebar up
-            } else {
-                // show header
-                header.style.top = "0px";
-                sidebar.style.top = "120px"; // keep under header
-            }
-        </script>
-
-        <script>
             let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
             const header = document.getElementById("header");
+            const sidebar = document.querySelector(".side-bar");
             let lastHidePosition = lastScrollTop;
+            
+            // Update sidebar sticky position to center it
+            function updateSidebarPosition() {
+                if (sidebar) {
+                    const sidebarHeight = sidebar.offsetHeight;
+                    const viewportHeight = window.innerHeight;
+                    const centerOffset = (viewportHeight - sidebarHeight) / 2;
+                    sidebar.style.top = centerOffset + "px";
+                }
+            }
+            
+            // Update on load and resize
+            window.addEventListener("load", updateSidebarPosition);
+            window.addEventListener("resize", updateSidebarPosition);
+            updateSidebarPosition();
             
             window.addEventListener("scroll", function () {
             const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -799,11 +820,11 @@
                 // Always show header at the very top
                 header.style.top = "0px";
             } else if (currentScroll > lastScrollTop) {
-                // Scrolling down
+                // Scrolling down - hide header
                 header.style.top = "-120px";
                 lastHidePosition = currentScroll;
             } else if (lastHidePosition - currentScroll > 50) {
-                // Scrolled up more than 100px
+                // Scrolled up more than 50px - show header
                 header.style.top = "0px";
             }
             
@@ -912,6 +933,54 @@
             });
             }
 
+        </script>
+
+        <!--side navigation-->
+        <script>
+            function scrollToSection(sectionId) {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    const offset = 140; // Account for header height
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }
+
+            // Update active state based on scroll position
+            function updateActiveNav() {
+                const sections = ['overview', 'research', 'branding', 'wireframing', 'site-architecture', 'prototyping', 'usability-testing', 'final-product', 'project-reflection'];
+                const navTabs = document.querySelectorAll('.mini-nav-tab');
+                const scrollPosition = window.pageYOffset + 200; // Offset for better UX
+
+                sections.forEach((sectionId, index) => {
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        const sectionTop = section.offsetTop;
+                        const sectionBottom = sectionTop + section.offsetHeight;
+                        const navTab = navTabs[index];
+
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                            navTabs.forEach(tab => tab.classList.remove('active'));
+                            navTab.classList.add('active');
+                        }
+                    }
+                });
+
+                // Handle overview section (which might be at the top)
+                const overview = document.getElementById('overview');
+                if (overview && scrollPosition < overview.offsetTop + 100) {
+                    navTabs.forEach(tab => tab.classList.remove('active'));
+                    navTabs[0].classList.add('active');
+                }
+            }
+
+            window.addEventListener('scroll', updateActiveNav);
+            window.addEventListener('load', updateActiveNav);
         </script>
     </body>
 </html>
