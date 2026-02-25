@@ -19,272 +19,168 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        
     </head>
-    <body style="gap:0;">
-        <header id="header" onclick="window.scrollTo(0, 0);">
-            <a class="name" href="/">
-                <p class="nav-font">Kelly La</p>
-            </a>
-            <div class="nav-pages">
-                    <a class="nav-link" href="/#works">
-                        <p class="nav-font">Works</p>
-                    </a>
-                    <a class="nav-link" href="/about/">
-                        <p class="nav-font">About</p>
-                    </a>
-                    <a class="nav-link" href="/KellyLa-Resume(2025).pdf" target="_blank">
-                        <p class="nav-font">Resume</p>
-                    </a>
-                </div>
-                <div class="nav-icons">
-                    <a class="icon" href="mailto:kellyla99@gmail.com">
-                        <img class="icon-container" src="/icon/mail.svg">
-                    </a>
 
-                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
-                        <img class="icon-container" src="/icon/linkedin.svg">
-                    </a>
+    <body>
+        <div class="header-main">
+            <header>
+                <div class="header-top">
+                    <div class="name">
+                        <a class="nav-font" href="/">
+                            <p-semi>Kelly La</p-semi>
+                        </a>
+                    </div>
+                    <div class="nav-pages">
+                        <a class="nav-link" href="#works">
+                            <p>Works</p>
+                        </a>
+                        <a class="nav-link" href="/about/">
+                            <p>About</p>
+                        </a>
+                        <a class="nav-link" href="/KellyLa-Resume(2026).pdf" target="_blank">
+                            <p>Resume</p>
+                        </a>
+                    </div>
                 </div>
-            <!--
-            <nav class="nav-items">
-                <div class="nav-pages">
-                    <a class="link" href="/#works">
-                        <p>Works</p>
+                <div class="header-bottom">
+                    <p>I'd love to connect!</p>
+                    <div class="nav-icons">
+                        <a class="icon" href="mailto:kellyla99@gmail.com">
+                            <img class="icon-container" src="/icon/mail.svg">
+                        </a>
+                        <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
+                            <img class="icon-container" src="/icon/linkedin.svg">
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main">
+                <div class="landing">
+                    <div class="landing-text">
+                        <h1 style="display: inline;">Hi, 
+                            <div class="custom-cursor">
+                                <img src="/icon/arrow-up-right.png" alt="cursor arrow">
+                                <span class="cursor-text"> About Me</span>
+                            </div>
+                            <a class="to-abtme" href="/about/">I'm Kelly!</a>
+                             A 
+                        </h1>
+                        <h1 style="display: inline; color: #b436b7ca; font-family: 'Playfair Display', 'Times New Roman', Times, serif;"> product designer </h1>
+                        <h1> with a passion for creating useful and engaging experiences.</h1>
+                    </div>
+                </div>
+                <div id="works" class="section">
+                    <div class="section-title">
+                        <h3>Featured Works</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="projects">
+                        <a class="project ss" href="/SevenSeas/index.html">
+                            <h4>Seven Seas Roasting Co.</h4>
+                            <p> Worked with Seven Seas owner to redesign their website to enhance customer's experience and highlight provided services.</p>
+                            <div class="tabs">
+                                <p class="tab">Client Work</p>
+                                <p class="tab">Responsive Design</p>
+                            </div>
+                            <div class="wireframe-container sevenseas">
+                                <img class="wireframe-img" src="homepage-imgs/seven-seas.png" rel="preload">
+                            </div>
+                        </a>
+                        <a class="project kot" href="/KioskOnTour/index.html">
+                            <h4>Kiosk on Tour</h4>
+                            <p>Improving the purchasing process for concert merchandise through self-service kiosks.</p>
+                            <div class="tabs">
+                                <p class="tab">Physical UX</p>
+                                <p class="tab">0 to 1</p>
+                            </div>
+                            <div class="wireframe-container kiosk">
+                                <img class="wireframe-img" src="homepage-imgs/kiosk-on-tour.png" rel="preload">
+                            </div>
+                        </a>
+                        <a class="project cook" href="/cooklaborate/index.html">
+                            <h4>Cooklaborate</h4>
+                            <p>Breaking the monotony of meal prepping with the help from your community.</p>
+                            <div class="tabs">
+                                <p class="tab">Social Computing</p>
+                                <p class="tab">0 to 1</p>
+                            </div>
+                            <div class="wireframe-container cooklab">
+                                <img class="wireframe-img" src="homepage-imgs/cooklaborate.png" rel="preload">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">
+                        <h3>About</h3>
+                        <div class="line"></div>
+                    </div>
+                    <div class="abt-me">
+                        <div class="left">
+                            <div class="jpeg fade-in" style="padding-left:30px;">
+                                <img style="width: 100%; " src="homepage-imgs/abt-me-img/knitting.png">
+                                <div style="font-size: 10px; font-weight: 500;">knitting<3.jpeg</div>
+                            </div>
+                            <div class="jpeg jpeg2 fade-in" >
+                                <img style="width: 100%;" src="homepage-imgs/abt-me-img/matcha.png">
+                                <div style="font-size: 10px; font-weight: 500;">matcha.jpeg</div>
+                            </div>
+                            <div class="finder">
+                                <img style="height: 100%;" src="homepage-imgs/abt-me-img/finder.png">
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="main-imgs">
+                                <img class="img1 fade-inmore"
+                                    src="homepage-imgs/abt-me-img/img1.png">
+                                <img class=" img2 fade-inmore"
+                                    src="homepage-imgs/abt-me-img/img2.png">
+                            </div>
+                            <div class="imessages">
+                                <div class="fade-up" style="height: 30px; margin-right: 150px;">
+                                    <img style="height: 100%;" src="homepage-imgs/abt-me-img/text1.png">
+                                </div>
+                                <div class="fade-up" style="height: 30px;
+                                    margin-bottom:-3px;">
+                                    <img style="height: 100%;" src="homepage-imgs/abt-me-img/text2.png">
+                                </div>
+                                <a class="text-link fade-up" href="/about/">
+                                    <img style="height: 100%;" src="homepage-imgs/abt-me-img/text3.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="jpeg jpeg3 fade-in" >
+                                <img style="width: 100%;" src="homepage-imgs/abt-me-img/cats.png">
+                                <div style="font-size: 10px; font-weight: 500;">CATS.jpeg</div>
+                            </div>
+                            <div class="jpeg fade-in">
+                                <img style="width: 100%;" src="homepage-imgs/abt-me-img/sunset.png">
+                                <div style="font-size: 10px; font-weight: 500;">sunsets.jpeg</div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="left-foot">
+                    <h1 style="color:#156526;">Thank you for visiting!</h1>
+                    <p style="color:#156526;">© <span id="year"></span> Kelly La</p>
+                </div>
+                <div class="right-foot">
+                    <a class="nav-link-foot" href="mailto:kellyla99@gmail.com">
+                        <p>Email</p>
                     </a>
-                    <a class="link" href="/about/">
-                        <p>About</p>
+                    <a class="nav-link-foot" href="https://www.linkedin.com/in/kellylaa248">
+                        <p>Linkedin</p>
                     </a>
-                    <a class="link" href="/KellyLa-Resume(2025).pdf" target="_blank">
+                    <a class="nav-link-foot" href="/KellyLa-Resume(2026).pdf" target="_blank">
                         <p>Resume</p>
                     </a>
                 </div>
-                <div class="nav-icons">
-                    <a class="icon" href="mailto:kellyla99@gmail.com">
-                        <img class="icon-container" src="/icon/mail.svg">
-                    </a>
-
-                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
-                        <img class="icon-container" src="/icon/linkedin.svg">
-                    </a>
-                </div>
--->
-            </nav>
-        </header> 
-
-        <div id="scrollBtn" onclick="scrollToTop()">↑</div>
-        <div style="display: flex; flex-direction: column; gap:-20px;">
-
-        
-        <div class="landing">
-            <img class="landing-star" src="homepage-imgs/landing-stars.png">
-            <div class="landing-content">
-                <div class="landing-text">
-                    <h3 style="font-weight: 400;" class="fade-in">Hello, I'm
-                        <a href="/about/" class="name-link">
-                        Kelly La</a>.</h3>
-                    <homepage-ux class="fade-in">ux designer</homepage-ux>
-                    <h2 class="intro-description fade-in" style="font-weight: 300;">with a passion for creating useful and engaging experiences.</h2>
-                </div>
-            </div>
-            <!--
-            <a href="#works">
-                <div class="view-works">
-                    <p style="text-align: center;">view works</p> 
-                    <img width="10px;" src="icon/down-arrow2.svg">
-                </div>
-                <img class="view-works-icon" src="homepage-imgs/view-works-circle.svg">
-                
-            </a>
-            -->
+            </footer>
         </div>
-
-        <!--
-        <div class="featured-works">
-            <p>Featured works</p>
-            <small>(2024-2025)</small>
-        </div>
-        -->
-
-        <div class="custom-cursor">
-            <img src="/icon/arrow-up-right.png" alt="cursor arrow">
-        </div>
-
-        <div class="all-projects" id="works">
-            <img class="landing-star2" src="homepage-imgs/star.png">
-            <img class="landing-star3" src="homepage-imgs/star.png">
-            <a class="link" href="/SevenSeas/">
-                <div class="project-box fade-in">
-                    <div class="wireframe-container" style="background-color: #8B5E3C;">
-                        <img class="wireframe-img" src="homepage-imgs/seven-seas.png" rel="preload">
-                    </div>
-                    <div class="bottom"> 
-                        <div class="title">
-                            <h3>Seven Seas Roasting Co.</h3>
-                            <div class="tab">Client Work</div>
-                        </div>
-                        <div class="project-text">
-                            <small style="line-height: 25px;">Website redesign to exhance customer's experience</small>
-                            <!--
-                            <img class="icon" src="icon/arrow-right-circle.svg">
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="link" href="/KioskOnTour/">
-                <div class="project-box fade-in">
-                    <div class="wireframe-container" style="background-color: #c1bce5;">
-                        <img width=100% src="homepage-imgs/kiosk-on-tour.png" rel="preload">
-                    </div>
-                    <div class="bottom"> 
-                        <div class="title">
-                            <h3>Kiosks on Tour</h3>
-                            <div class="tab">Physical UX</div>
-                        </div>
-                        <div class="project-text">
-                            <small style="line-height: 25px;">Improving the purchasing process for concert merchandise</small>
-                            <!--
-                            <img class="icon" src="icon/arrow-right-circle.svg">
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a class="link" href="/cooklaborate/">
-                <div class="project-box fade-in">
-                    <div class="wireframe-container" style="background-color: #419A54;">
-                        <img width=100% src="homepage-imgs/cooklaborate.png" rel="preload">
-                    </div>
-                    <div class="bottom"> 
-                        <div class="title">
-                            <h3>Cooklaborate</h3>
-                            <div class="tab">0 to 1</div>
-                        </div>
-                        <div class="project-text">
-                            <small style="line-height: 25px;">Breaking the monotony of meal prepping with the help from your community</small>
-                            <!--
-                            <img class="icon" src="icon/arrow-right-circle.svg">
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        </div>
-
-        <div class="footnote">
-            <div>
-                <div class="fade-in" style="display: flex; align-items: center; gap:5px;">
-                    <h3 class="project-title ">Thank you for visiting!</h3>
-                    <div class="footer-stars">
-                        <img width=100% height=100% style="border: none;" src="/homepage-imgs/landing-stars.png">
-                    </div>
-                </div>
-                <p class="nav-font fade-in">Made with coffee and an endless playlist. © 2025 Kelly La</p>
-            </div>
-            <div class="nav-items-foot">
-                <div class="nav-icons fade-in">
-                    <a class="icon" href="mailto:kellyla99@gmail.com">
-                        <img class="icon-container" src="/icon/mail.svg">
-                    </a>
-                    <a class="icon"  href="https://www.linkedin.com/in/kellylaa248" target="_blank">
-                        <img class="icon-container" src="/icon/linkedin.svg">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!--cursor-->
-        <script>
-        const cursor = document.querySelector(".custom-cursor");
-        const projectBoxes = document.querySelectorAll(".project-box");
-        
-
-        projectBoxes.forEach(box => {
-            box.addEventListener("mouseenter", () => {
-            cursor.style.display = "flex";
-            box.style.cursor = "none"; // hide default arrow inside box
-            });
-
-            box.addEventListener("mouseleave", () => {
-            cursor.style.display = "none";
-            box.style.cursor = "default"; // restore arrow
-            });
-        });
-
-        // Move cursor with mouse
-        document.addEventListener("mousemove", (e) => {
-            cursor.style.top = `${e.clientY}px`;
-            cursor.style.left = `${e.clientX}px`;
-        });
-        </script>
-
-
-        <!--fade-in animation-->
-        <script>
-            const faders = document.querySelectorAll('.fade-in');
-            
-            const appearOptions = {
-                threshold: 0.2
-            };
-            
-            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target); // animate only once
-                });
-            }, appearOptions);
-            
-            faders.forEach(fader => {
-                appearOnScroll.observe(fader);
-            });
-        </script>
-
-        <!--scroll to top arrow-->
-        <script>
-            const scrollToTopButton = document.getElementById("scrollBtn");
-
-            window.addEventListener("scroll", () => {
-            if (window.scrollY >= 200) {
-                scrollToTopButton.classList.add("show");
-            } else {
-                scrollToTopButton.classList.remove("show");
-            }
-            });
-
-            function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-            }
-
-        </script>
-
-        <script>
-            let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const header = document.getElementById("header");
-            let lastHidePosition = lastScrollTop;
-            
-            window.addEventListener("scroll", function () {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (currentScroll < 50) {
-                // Always show header at the very top
-                header.style.top = "0px";
-            } else if (currentScroll > lastScrollTop) {
-                // Scrolling down
-                header.style.top = "-120px";
-                lastHidePosition = currentScroll;
-            } else if (lastHidePosition - currentScroll > 50) {
-                // Scrolled up more than 100px
-                header.style.top = "0px";
-            }
-            
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-            });
-        </script> 
+        <script src="code.js"></script>
     </body>
 </html>

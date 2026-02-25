@@ -1,18 +1,19 @@
-.landing{
-    width: 100vw;
-    position: relative;
-    
+.main{
+    margin-left: 20vw;
+    padding: 60px;
     display: flex;
-    align-items: center;
-    margin-top: 140px;
     flex-direction: column;
-    display: flex;
+    gap: 100px;
 }
+
+h1, h3{
+    color: #1c1c1c;
+}
+
 
 .landing-content{
     display: flex;
     flex-direction: column;
-    padding: 0 30px ;
     align-items: center;
     align-self: stretch;
     gap: 30px;
@@ -50,19 +51,17 @@
     align-items: center;
     justify-content: center;
     object-fit: cover;
-    display: block;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     background-color: #8B5E3C;
     padding: 30px 20%;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .landing-img{
-    object-fit: contain;
     width: 100%;
-    height: 100%;
 }
 
 .content{
@@ -81,7 +80,6 @@
     align-items: flex-start;
     gap: 40px;
     flex-direction: column;
-    width: 100%;
 }
 
 .details{
@@ -325,10 +323,7 @@ img{
 .content-with-nav{
     display: flex;
     gap: 50px;
-    padding-right: 180px;
-    padding-left: 160px;
     box-sizing: border-box;
-    width: 100%;
 }
 
 .side-bar{

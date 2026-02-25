@@ -1,25 +1,22 @@
-.content{
+.main{
+    margin-left: 20vw;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
 }
 
 .landing{
-    position: relative;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 3%;
     align-items: center;
-    margin-top: 180px;
-    padding: 0 20%;
-    justify-content: space-between;
-    gap: 80px;
 }
 
 .left{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 60%;
 }
 
 .intro{
@@ -31,56 +28,132 @@
 .description{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.button{
-    color: rgb(40, 40, 40);
-    border: 1px solid rgb(40, 40, 40);
-    padding: 10px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    align-content: center;
-    border-radius: 30px;
-    transition: 0.3s;
-    opacity: 1;
-}
-
-.button:hover{
-    background-color: #c0cced;
-    border: 1px solid #c0cced;
+    gap: 20px;
 }
 
 .right{
-    object-fit:cover;
+    object-fit: cover;
+    padding: 0 60px;
+    display: flex;
 }
 
-.extra{
+.jpeg{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 120px 22%;
-    background-color: #c0cced;
+    gap: 5px;
+    width: 70px;
     align-items: center;
+    filter: drop-shadow(0px 0px 1px #44444440);
+    position:relative;
+    z-index: 12; 
+    margin-right: -30px;
+    margin-top: 55px;
 }
 
-.activity-pics{
+.resume-jpeg{
+    width: 100%;
+    padding: 4px;
+    background-color: #E9E9EA;
+}
+
+.jpeg-text{
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 5px;
+    border-radius: 3px;
+    background-color: #ffffff66;
+}
+
+.jpeg:hover .jpeg-text{
+    color: white;
+    background-color: #0064E1;
+}
+
+.hobbies{
+    padding-left: 20px;
+}
+
+.hobbies-jpeg{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3%;
+    padding-left: 55px;
+    margin-top: -15%;
+    margin-right: -30%;
 }
 
-.activity{
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    object-fit:cover;
-    border-radius: 3px;
+.hobby-folder{
+    width: 70%;
+    object-fit: cover;
 }
 
-.ver{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+.knitting{
+    width: 90%;
+    object-fit: cover;
+    margin-top: -50%;
+    margin-left: -20%;
+}
+
+.food{
+    width: 70%;
+    object-fit: cover;
+    margin-top: 15%;
+    margin-left: -60%;
+}
+
+.nails{
+    width:90%;
+    object-fit: cover;
+}
+
+.camera{
+    width: 80%;
+    object-fit: cover;
+    margin-top: -35%;
+    margin-left: -110%;
+}
+
+@media (max-width: 950px){
+    .landing{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width: 60%;
+    }
+    .hobbies-jpeg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 25px;
+    margin-top: -10%;
+    margin-right: -30%;
+    }   
+
+    .knitting{
+        width: 100%;
+        object-fit: cover;
+        margin-top: -60%;
+        margin-left: -25%;
+    }
+
+    .food{
+        width: 100%;
+        object-fit: cover;
+        margin-top: 15%;
+        margin-left: -63%;
+    }
+
+    .nails{
+        width:100%;
+        object-fit: cover;
+    }
+
+    .camera{
+        width: 100%;
+        object-fit: cover;
+        margin-top: -60%;
+        margin-left: -110%;
+    }
 }
