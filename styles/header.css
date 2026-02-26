@@ -23,6 +23,7 @@ header{
     margin: 0;
     text-decoration: none;
     color:#156526;
+    padding-left: 10px;
 }
 
 .name{
@@ -46,13 +47,13 @@ header{
     background-size: 200% 100%;
     background-position: right bottom;
 
-    transition: background-position 0.4s ease, padding-left 0.4s ease;
+    transition:0.4s ease;
     color:#156526;
+    padding-left: 10px;
 }
 
 .nav-link:hover{
-    background-position: left bottom;
-    padding-left: 10px;
+    background-color: #f0b2ee33;
 }
 
 .nav-icons{
@@ -93,5 +94,5 @@ header{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    padding-left: 10px;
 }
