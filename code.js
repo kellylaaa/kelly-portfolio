@@ -58,4 +58,35 @@ faders.forEach(fader => appearOnScroll.observe(fader));
 document.getElementById("year").textContent = new Date().getFullYear();
 
 
+function updateTime() {
+    const now = new Date();
 
+    const options = {
+        timeZone: "America/Los_Angeles",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+    };
+
+    const sfDate = new Date(
+        now.toLocaleString("en-US", { timeZone: "America/Los_Angeles" })
+    );
+
+    const sfHour = sfDate.getHours();
+
+    document.getElementById("live-time").textContent =
+        now.toLocaleTimeString("en-US", options);
+
+    const body = document.body;
+
+    if (sfHour >= 6 && sfHour < 21) {
+        body.classList.add("day");
+        body.classList.remove("night");
+    } else {
+        body.classList.add("night");
+        body.classList.remove("day");
+    }
+}
+
+updateTime();
+setInterval(updateTime, 60000);

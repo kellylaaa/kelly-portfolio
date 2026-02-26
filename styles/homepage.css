@@ -7,8 +7,106 @@
     gap: 100px;
 }
 
+/* ===== Background Radiant Layer ===== */
+body {
+    transition: background 0.8s ease;
+}
+
+/* Shared glow layer */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 800px;
+    height: 700px;
+    pointer-events: none;
+    z-index: -1;
+    transition: background 0.8s ease;
+}
+
+/* ===== Day (Yellow Glow) ===== */
+body.day::before {
+    background: radial-gradient(
+        circle at top right,
+        rgba(255, 179, 0, 0.3) 0%,
+        rgba(255, 204, 0, 0.15) 25%,
+        rgba(255, 204, 0, 0.08) 45%,
+        transparent 70%
+    );
+}
+
+/* ===== Night (Soft Blue Glow) ===== */
+body.night::before {
+    background: radial-gradient(
+        circle at top right,
+        rgba(80, 99, 206, 0.3) 0%,
+        rgba(85, 146, 220, 0.15) 25%,
+        rgba(96, 165, 250, 0.08) 45%,
+        transparent 70%
+    );
+}
+
 h1,h2,h3,h4,p-semi{
     color:#156526;
+}
+
+#local-time {
+    position: absolute;
+    top: 35px;
+    right: 60px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+    letter-spacing: 0.5px;
+
+    opacity: 0.8;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Live Dot */
+.live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    position: relative;
+}
+
+/* Pulse animation */
+.live-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: #22c55e;
+    opacity: 0.6;
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.city {
+    font-weight: 400;
+}
+
+.divider {
+    opacity: 0.4;
 }
 
 .landing-text{
@@ -292,6 +390,12 @@ h1,h2,h3,h4,p-semi{
     }
     .left{
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 900px){
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
 
