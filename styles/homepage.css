@@ -42,7 +42,7 @@ body.night::before {
         circle at top right,
         rgba(80, 99, 206, 0.3) 0%,
         rgba(85, 146, 220, 0.15) 25%,
-        rgba(96, 165, 250, 0.08) 45%,
+        rgba(150, 194, 248, 0.08) 45%,
         transparent 70%
     );
 }

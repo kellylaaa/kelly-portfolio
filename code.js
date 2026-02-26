@@ -79,7 +79,7 @@ function updateTime() {
 
     const body = document.body;
 
-    if (sfHour >= 6 && sfHour < 21) {
+    if (sfHour >= 6 && sfHour < 18) {
         body.classList.add("day");
         body.classList.remove("night");
     } else {
