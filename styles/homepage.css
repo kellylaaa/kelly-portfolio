@@ -1,18 +1,17 @@
 .main{
     margin-left: 20vw;
-    margin-top: 25vh;
+    margin-top: 30vh;
     padding: 60px;
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-/* ===== Background Radiant Layer ===== */
+/*
 body {
     transition: background 0.8s ease;
 }
 
-/* Shared glow layer */
 body::before {
     content: "";
     position: absolute;
@@ -25,7 +24,6 @@ body::before {
     transition: background 0.8s ease;
 }
 
-/* ===== Day (Yellow Glow) ===== */
 body.day::before {
     background: radial-gradient(
         circle at top right,
@@ -35,8 +33,7 @@ body.day::before {
         transparent 70%
     );
 }
-
-/* ===== Night (Soft Blue Glow) ===== */
+    
 body.night::before {
     background: radial-gradient(
         circle at top right,
@@ -46,6 +43,8 @@ body.night::before {
         transparent 70%
     );
 }
+
+*/
 
 h1,h2,h3,h4,p-semi{
     color:#156526;
