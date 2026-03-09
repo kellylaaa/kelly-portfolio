@@ -9,7 +9,7 @@
 .landing{
     display: flex;
     gap: 3%;
-    align-items: center;
+    align-items:flex-start;
 }
 
 .left{
@@ -23,12 +23,20 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 120px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.skills-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 50px;
 }
 
 .right{
