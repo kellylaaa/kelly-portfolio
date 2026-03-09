@@ -34,8 +34,7 @@
 
 .skills-section{
     display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    gap: 120px;
     margin-top: 50px;
 }
 
