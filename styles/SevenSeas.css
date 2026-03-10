@@ -331,7 +331,7 @@ img{
     display:flex;
     flex-direction: column;
     height: fit-content;
-    gap: 20px;
+    gap: 10px;
     min-width:200px;
     align-self: flex-start;
     padding-left: 0;
@@ -339,19 +339,20 @@ img{
 
 .mini-nav-tab{
     display: flex;
-    gap: 20px;
+    gap: 0px;
     cursor: pointer;
-    padding: 0px 20px;
+    padding: 4px 20px;
 
     transition: all 0.3s ease;
     color: #333;
     opacity: 60%;
+    padding-left: 10px;
+    background-color:#8b5e3c00;
 }
 
 .mini-nav-tab:hover{
-    color:#8B5E3C;
+    background-color:hsla(26, 40%, 39%, 0.2);
     opacity: 100%;
-
 }
 
 .mini-nav-tab.active{

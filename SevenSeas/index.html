@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="content-with-nav">
-                    <div class="side-bar">
+                    <div class="side-bar" style="top: 100px;">
                         <div class="mini-nav-tab" onclick="scrollToSection('overview')">
                             Overview
                         </div>
@@ -913,7 +913,7 @@
             function scrollToSection(sectionId) {
                 const element = document.getElementById(sectionId);
                 if (element) {
-                    const offset = 140; // Account for header height
+                    const offset = 0; // Account for header height
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -928,7 +928,7 @@
             function updateActiveNav() {
                 const sections = ['overview', 'research', 'branding', 'wireframing', 'site-architecture', 'prototyping', 'usability-testing', 'final-product', 'project-reflection'];
                 const navTabs = document.querySelectorAll('.mini-nav-tab');
-                const scrollPosition = window.pageYOffset + 200; // Offset for better UX
+                const scrollPosition = window.pageYOffset + 100; // Offset for better UX
 
                 sections.forEach((sectionId, index) => {
                     const section = document.getElementById(sectionId);
