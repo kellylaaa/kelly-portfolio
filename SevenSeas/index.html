@@ -68,7 +68,8 @@
                 </div>
 
                 <div class="content-with-nav">
-                    <div class="side-bar" style="top: 100px;">
+                    <div class="side-bar">
+                       
                         <div class="mini-nav-tab" onclick="scrollToSection('overview')">
                             Overview
                         </div>
@@ -709,10 +710,12 @@
                                         <video width="100%" src="/SevenSeas-imgs/final-prototype/subscription.mp4" muted loop preload="metadata"></video>
                                         <small class="img-description">Subscription page</small>
                                     </div>
+                                    <!--
                                     <div>
                                         <video width="100%" src="/SevenSeas-imgs/final-prototype/about.mp4" muted loop preload="metadata"></video>
                                         <small class="img-description">About page</small>
                                     </div>
+                                    -->
                                 </div>
                                 <a class="button fade-in" href="https://www.figma.com/proto/rALpb3Rg0NHnEBxupgy7ib/cogs187b?node-id=656-4410&starting-point-node-id=656%3A4410&t=HFv6giU4YSS8HRGF-1">View final product</a>
                             </div>
@@ -764,46 +767,6 @@
         <div id="scrollBtn" onclick="scrollToTop()">↑</div>
 
         <!-- scripts -->
-
-        <script>
-            let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const header = document.getElementById("header");
-            const sidebar = document.querySelector(".side-bar");
-            let lastHidePosition = lastScrollTop;
-            
-            // Update sidebar sticky position to center it
-            function updateSidebarPosition() {
-                if (sidebar) {
-                    const sidebarHeight = sidebar.offsetHeight;
-                    const viewportHeight = window.innerHeight;
-                    const centerOffset = (viewportHeight - sidebarHeight) / 2;
-                    sidebar.style.top = centerOffset + "px";
-                }
-            }
-            
-            // Update on load and resize
-            window.addEventListener("load", updateSidebarPosition);
-            window.addEventListener("resize", updateSidebarPosition);
-            updateSidebarPosition();
-            
-            window.addEventListener("scroll", function () {
-            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (currentScroll < 50) {
-                // Always show header at the very top
-                header.style.top = "0px";
-            } else if (currentScroll > lastScrollTop) {
-                // Scrolling down - hide header
-                header.style.top = "-120px";
-                lastHidePosition = currentScroll;
-            } else if (lastHidePosition - currentScroll > 50) {
-                // Scrolled up more than 50px - show header
-                header.style.top = "0px";
-            }
-            
-            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-            });
-        </script> 
 
          <!--hover play final prototype-->
          <script>
@@ -928,7 +891,7 @@
             function updateActiveNav() {
                 const sections = ['overview', 'research', 'branding', 'wireframing', 'site-architecture', 'prototyping', 'usability-testing', 'final-product', 'project-reflection'];
                 const navTabs = document.querySelectorAll('.mini-nav-tab');
-                const scrollPosition = window.pageYOffset + 100; // Offset for better UX
+                const scrollPosition = window.pageYOffset + 200; // Offset for better UX
 
                 sections.forEach((sectionId, index) => {
                     const section = document.getElementById(sectionId);

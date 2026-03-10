@@ -1,15 +1,14 @@
 .main{
-    margin-left: 20vw;
-    padding: 60px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     gap: 100px;
+    margin-left: 20vw;;
 }
 
 h1, h3{
     color: #1c1c1c;
 }
-
 
 .landing-content{
     display: flex;
@@ -71,8 +70,8 @@ h1, h3{
     align-items: center;
     gap: 50px;
     flex: 1;
+    padding-right: 2vw;
     min-width: 0;
-    padding-left: 50px;
 }
 
 .overview{
@@ -118,7 +117,6 @@ h1, h3{
     align-items: flex-start;
     gap: 40px;
     flex: 1 0 0;
-    width: 100%;
 }
 
 .section-content{
@@ -142,7 +140,7 @@ h1, h3{
 }
 
 .sub-sub-section{
-    padding: 10px 50px;
+    padding: 10px 5vw;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -160,7 +158,7 @@ ul{
     display:flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0 50px;
+    padding: 0 3vw;
 }
 
 .section-title{
@@ -252,7 +250,7 @@ td.checkbox {
 
 .five-vid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     justify-content: center;
     align-items: top;
@@ -335,6 +333,7 @@ img{
     min-width:200px;
     align-self: flex-start;
     padding-left: 0;
+    top: 106.5px;
 }
 
 .mini-nav-tab{
