@@ -69,7 +69,6 @@
 
                 <div class="content-with-nav">
                     <div class="side-bar">
-                       
                         <div class="mini-nav-tab" onclick="scrollToSection('overview')">
                             Overview
                         </div>
@@ -78,9 +77,6 @@
                         </div>
                         <div class="mini-nav-tab" onclick="scrollToSection('branding')">
                             Branding
-                        </div>
-                        <div class="mini-nav-tab" onclick="scrollToSection('wireframing')">
-                            Wireframing
                         </div>
                         <div class="mini-nav-tab" onclick="scrollToSection('site-architecture')">
                             Site Architecture
@@ -448,7 +444,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--
                     <div class="section" id="wireframing">
                         <h2 class="section-title fade-in">Wireframing</h2>
                         <div class="section-content">
@@ -463,7 +459,7 @@
                             </div>
                         </div>
                     </div>
-
+                    -->
                     <div class="section" id="site-architecture">
                         <h2 class="section-title fade-in">Site architecture</h2>
                         <div class="section-content">
@@ -508,10 +504,17 @@
                         <h2 class="section-title fade-in">Prototyping</h2>
                         <div class="section-content">
                             <div class="sub-section">
+                                <p class="fade-in">Since we were creating a mobile-first website, we designed a low resolution mobile prototype for the primary screens based on our researching findings. The new layout we had in mind worked well and felt more intuitive than the original.</p>
+                                <div class="sub-sub-section fade-in">
+                                    <div>
+                                        <img src="/SevenSeas-imgs/lofi.png" style="width: 100%">
+                                        <small style="opacity: 60%; justify-self: center;">Low-fidelity screens of the primary navigation pages</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-section">
                                 <p class="fade-in">
-                                    After finalizing our new sitemap, we began creating our high fidelity prototype.
-                                    <br><br>
-                                    First we created important components such as navigation menus, button states, and product carousels and organized them together for easy access.
+                                    To begin creating out high fidelity prototype, we first designed important components such as navigation menus, button states, and product carousels and organized them together for easy access.
                                 </p>
                                 <div class="sub-sub-section fade-in">
                                     <div>
@@ -648,37 +651,37 @@
                                 <div class="paragraphs">
                                     <h3 class="fade-in">Iterations</h3>
                                     <ul style="gap:50px; list-style-position: inside; padding:0;">
-                                        <div class="categories-ver">
+                                        <div class="categories-hoz" style="display: grid; grid-template-columns: 1fr 1fr;">
                                             <li class="fade-in">To improve user's purchasing experience, we decided to add a <strong>cart preview</strong> feature to give users the option to see what is in their cart before leaving their current page.</li>
                                             <div class="mood-style fade-in">
                                                 <img class="iteration-img"  src="/SevenSeas-imgs/iterations/cart-preview.png">
                                                 <small class="img-description">Cart Preview</small>
                                             </div>
                                         </div>
-                                        <div class="categories-ver">
+                                        <div class="categories-hoz" style="display: grid; grid-template-columns: 1fr 1fr;">
                                             <li class="fade-in">We decided to add a <strong>view more</strong> button to inform users that there is more on the page and it is scrollable.</li>
-                                            <div>
-                                                <img class="iteration-img fade-in" src="/SevenSeas-imgs/iterations/view-more.jpeg">
+                                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                                <img class="iteration-img fade-in" src="/SevenSeas-imgs/iterations/view-more.jpeg" style="height: 350px; width: auto;">
                                                 <small class="img-description">Landing page</small>
                                             </div>
                                         </div>
-                                        <div class="categories-ver">
+                                        <div class="categories-hoz" style="display: grid; grid-template-columns: 1fr 1fr;">
                                             <li class="fade-in">To help users find the <strong>Subscription Calculator</strong>, we added another entry point that draws attention to the feature.</li>
-                                            <div class="categories-hoz fade-in">
+                                            <div class="categories-hoz fade-in" style="display: flex; justify-content: center;">
                                                 <div>
-                                                    <img class="iteration-img" src="/SevenSeas-imgs/iterations/subcalc1.jpeg">
+                                                    <img class="iteration-img" src="/SevenSeas-imgs/iterations/subcalc1.jpeg" style="height: 350px; width: auto;">
                                                     <small class="img-description">New entry point</small>
                                                 </div>
                                                 <div>
-                                                    <img class="iteration-img" src="/SevenSeas-imgs/iterations/subcalc3.PNG">
+                                                    <img class="iteration-img" src="/SevenSeas-imgs/iterations/subcalc3.PNG" style="height: 350px; width: auto;">
                                                     <small class="img-description">After using the <br>Subscription Calculator</small>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="categories-ver">
+                                        <div class="categories-hoz" style="display: grid; grid-template-columns: 1fr 1fr;">
                                             <li class="fade-in">To help users easily access the <strong>Order Now</strong> button, we added a static “Order Ahead” button on the menu page where users can access this button anytime on the page.</li>
-                                            <div >
-                                                <video class="iteration-img fade-in" src="/SevenSeas-imgs/iterations/ordernow.mp4" autoplay playinline muted loop preload="metadata"></video>
+                                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                                <video class="iteration-img fade-in" src="/SevenSeas-imgs/iterations/ordernow.mp4" autoplay playinline muted loop preload="metadata" style="height: 350px; width: auto;"></video>
                                                 <small class="img-description">LocationMenu</small>
                                             </div>
                                         </div>
@@ -710,12 +713,10 @@
                                         <video width="100%" src="/SevenSeas-imgs/final-prototype/subscription.mp4" muted loop preload="metadata"></video>
                                         <small class="img-description">Subscription page</small>
                                     </div>
-                                    <!--
                                     <div>
                                         <video width="100%" src="/SevenSeas-imgs/final-prototype/about.mp4" muted loop preload="metadata"></video>
                                         <small class="img-description">About page</small>
                                     </div>
-                                    -->
                                 </div>
                                 <a class="button fade-in" href="https://www.figma.com/proto/rALpb3Rg0NHnEBxupgy7ib/cogs187b?node-id=656-4410&starting-point-node-id=656%3A4410&t=HFv6giU4YSS8HRGF-1">View final product</a>
                             </div>
@@ -876,7 +877,7 @@
             function scrollToSection(sectionId) {
                 const element = document.getElementById(sectionId);
                 if (element) {
-                    const offset = 0; // Account for header height
+                    const offset = 85; // Account for header height
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -889,9 +890,9 @@
 
             // Update active state based on scroll position
             function updateActiveNav() {
-                const sections = ['overview', 'research', 'branding', 'wireframing', 'site-architecture', 'prototyping', 'usability-testing', 'final-product', 'project-reflection'];
+                const sections = ['overview', 'research', 'branding', 'site-architecture', 'prototyping', 'usability-testing', 'final-product', 'project-reflection'];
                 const navTabs = document.querySelectorAll('.mini-nav-tab');
-                const scrollPosition = window.pageYOffset + 200; // Offset for better UX
+                const scrollPosition = window.pageYOffset + 85; // Offset for better UX
 
                 sections.forEach((sectionId, index) => {
                     const section = document.getElementById(sectionId);
@@ -909,7 +910,7 @@
 
                 // Handle overview section (which might be at the top)
                 const overview = document.getElementById('overview');
-                if (overview && scrollPosition < overview.offsetTop + 100) {
+                if (overview && scrollPosition < overview.offsetTop + 40) {
                     navTabs.forEach(tab => tab.classList.remove('active'));
                     navTabs[0].classList.add('active');
                 }
