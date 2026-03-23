@@ -1,9 +1,9 @@
 .main{
     margin-left: 20vw;
-    padding: 60px;
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 35px;
 }
 
 h1, h3{
@@ -16,6 +16,7 @@ h1, h3{
     align-items: center;
     align-self: stretch;
     gap: 30px;
+    padding: 0 35px;
 }
 
 
@@ -73,7 +74,7 @@ h1, h3{
     gap: 50px;
     flex: 1;
     min-width: 0;
-    padding: 0px 50px;
+    padding: 0px 0px;
 }
 
 .overview{
@@ -81,6 +82,7 @@ h1, h3{
     align-items: flex-start;
     gap: 40px;
     flex-direction: column;
+    padding: 0 100px;
 }
 
 .details{
@@ -119,7 +121,7 @@ h1, h3{
     align-items: flex-start;
     gap: 40px;
     flex: 1 0 0;
-    width: 100%;
+    padding: 0 100px;
 }
 
 .section-content{
@@ -324,4 +326,51 @@ img{
 .iteration-img{
     display: block;
     height: 350px;
+}
+
+.side-bar{
+    position: sticky;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+
+    top: 0;
+    border-bottom: 1px solid #0000001a;
+    background-color: hsla(0, 0%, 97%, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 10;
+
+    padding: 15px 35px;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mini-nav-tab{
+    display: flex;
+    gap: 0px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    color: #333;
+    opacity: 60%;
+    background-color:#8b5e3c00;
+    align-self: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.mini-nav-tab:hover{
+    color: #2F3F7A;
+    opacity: 100%;
+}
+
+.mini-nav-tab.active{
+    color:#2F3F7A;
+    font-weight: 500;
+    opacity: 100%;
+
 }
